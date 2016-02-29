@@ -1,0 +1,8 @@
+mixin pager(list)
+  +b('section').pager&attributes(attributes)
+    +e('h4').title
+      block
+    +e('ul').list
+      each item in list
+        +e('li')(class="item #{item[1] ? '--active' : ''}")
+          a(href="#0")= item[0]

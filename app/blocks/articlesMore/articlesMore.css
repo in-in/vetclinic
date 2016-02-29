@@ -1,0 +1,10 @@
+.articlesMore
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.articlesMore__inner
+{
+  background-color: var(--innerBg);
+}

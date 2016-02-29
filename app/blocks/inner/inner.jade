@@ -1,0 +1,139 @@
+include ../service/service
+include ../banner/banner
+include ../info/info
+include ../articles/articles
+include ../widget/widget
+include ../breadcrumbs/breadcrumbs
+include ../aboutMenu/aboutMenu
+include ../list/list
+include ../viewAddresses/viewAddresses
+include ../serviceList/serviceList
+
+mixin inner()
+  +b.inner&attributes(attributes)
+    +container()
+      .inner__wrap
+        .inner__breadcrumbs
+          +breadcrumbs()
+        .inner__content
+          .inner__main
+            block
+          .inner__sidebar
+            if about
+              .inner__sidebarGroup
+                +aboutMenu([
+                          ['Лаборатория', 'title'],
+                          ['Наши ветеринары', 'title'],
+                          ['Вакансии', 'title'],
+                          ['Лицензии и сертификаты', 'title']
+                        ])
+            if articles
+              .inner__sidebarGroup
+                +viewAddresses()
+            if serviceMore
+              .inner__sidebarGroup
+                +infoBlock() 
+                  +infoTitle() Виды услуг
+                  +infoInner()
+                    +serviceList(getData('serviceList')).--sidebar
+            if adopt
+              .inner__sidebarGroup
+                +aboutMenu([
+                          ['Ищут хозяина', 'title'],
+                          ['Нашли семью', 'title']
+                        ])
+            .inner__banner.inner__sidebarGroup
+              if !adopt
+                +banner(null, 'adopt_banner.jpg').banner--small.banner--light.banner--sidebar
+                  +bannerLink() Котенок ищет хозяина
+              +banner([['icon-house']]).banner--small.banner--sidebar
+                +bannerTitle() Зоогостиница
+              +banner([['icon-man']]).banner--small.banner--sidebar
+                +bannerTitle() Дрессировка
+              +banner([['icon-hair']]).banner--small.banner--sidebar
+                +bannerTitle() Груминг
+              +banner([['icon-taxi']]).banner--small.banner--sidebar
+                +bannerTitle() Зоотакси
+            .inner__articles.inner__sidebarGroup
+              +infoBlock()
+                +infoTitle() Статьи
+                +infoInner().--sidebar
+                  +articlesMobile([
+                    {
+                      "title": 'Профилактика ушных заболеваний у собак',
+                      "img": "images/articles1.png",
+                      "date": "12.12.2015"
+                    },
+                    {
+                      "title": 'Как правильно кормить персидских котов',
+                      "img": "images/articles2.png",
+                      "date": "12.12.2015"
+                    }
+                  ]).--sidebar
+            if about
+              .inner__sidebarGroup
+                +infoBlock() 
+                  +infoTitle() Опрос
+                  +infoInner().--col
+                    +list([
+                      {"name": 'Чертановская'},
+                      {"name": 'Беговая'},
+                      {"name": 'Савеловская'},
+                      {"name": 'Измайловская'},
+                      {"name": 'Кантемировская'},
+                      {"name": 'Динамо'}
+                    ]) В какой из наших клиник вам удобнее обслуживаться территориально?
+                
+        .inner__mobile
+          .inner__widget
+            +widget().widget--primary.button Cрочный вызов ветеринара
+            +widget().widget--second.button Записаться к врачу
+          .inner__articles
+            +infoBlock()
+              +infoTitle().--mobile Статьи
+              +infoInner().--articles
+                +articlesMobile([
+                  {
+                    "title": 'Профилактика ушных заболеваний у собак',
+                    "img": "images/articles1.png",
+                    "date": "12.12.2015"
+                  },
+                  {
+                    "title": 'Как правильно кормить персидских котов',
+                    "img": "images/articles2.png",
+                    "date": "12.12.2015"
+                  }
+                ])
+          .inner__service
+            +service([
+              {
+                "title": "Лаболатория ветклиники",
+                "type": 'service__item--first',
+                "icon": "icon-lab"
+              },
+              {
+                "title": "Зоогостиница",
+                "type": 'service__item--second',
+                "icon": "icon-house"
+              },
+              {
+                "title": "Груминг",
+                "type": 'service__item--second',
+                "icon": "icon-hair"
+              },
+              {
+                "title": "Дрессировка",
+                "type": 'service__item--first',
+                "icon": "icon-man"
+              },
+              {
+                "title": "Зоотакси",
+                "type": 'service__item--first',
+                "icon": "icon-taxi"
+              },
+              {
+                "title": "Ищем хозяев",
+                "type": 'service__item--second',
+                "icon": "icon-magnifier"
+              },
+            ])

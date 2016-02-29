@@ -1,0 +1,53 @@
+.staffCard
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.staffCard__avatar
+{
+  display: block;
+  width: 100%;
+}
+
+.staffCard__data
+{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 6.188rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.staffCard__name
+{
+  margin: 0;
+  padding: 0;
+  padding-bottom: .625rem;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.staffCard__position
+{
+  font-size: var(--smallFontSize);
+}
+
+.staffCard__button
+{
+  display: block;
+  width: 100%;
+  height: 3rem;
+  transition: all .2s ease;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--widgetBgSecond);
+  font-size: var(--smallFontSize);
+  font-weight: 700;
+  line-height: 3rem;
+}

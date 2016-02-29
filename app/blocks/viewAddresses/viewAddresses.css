@@ -1,0 +1,22 @@
+.viewAddresses
+{
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1.125rem; /* 18/16 */
+  padding-right: .625rem; /* 10/16 */
+  padding-bottom: 1.125rem; /* 18/16 */
+  padding-left: .75rem; /* 12/16 */
+  background-color: var(--innerBg);
+}
+
+.viewAddresses__link
+{
+  margin-bottom: .313rem; /* 5/16 */
+}
+
+.viewAddresses p
+{
+  margin: 0;
+  font-size: var(--mediumFontSize);
+  font-weight: 300;
+}

@@ -1,0 +1,21 @@
+.tab-links
+{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.tab-content
+{
+  flex-direction: column;
+}
+
+.tab
+{
+  display: none;
+}
+
+.tab.active
+{
+  display: flex;
+}

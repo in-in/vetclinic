@@ -1,0 +1,13 @@
+extends ../blocks/layout-default/layout-default
+
+include ../blocks/inner/inner
+include ../blocks/serviceMore/serviceMore
+
+
+block head
+  - var pageType = 'inner';
+  - var serviceMore = true;
+
+block content
+  +inner()
+    +serviceMore()

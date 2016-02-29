@@ -1,0 +1,22 @@
+mixin infoBlock()
+  +b('aside').infoBlock&attributes(attributes)
+    block
+
+mixin infoTitle()
+  +e('h4').header&attributes(attributes)
+    block
+
+mixin infoInner()
+  +e.inner&attributes(attributes)
+    block
+
+mixin infoText()
+  +e.text&attributes(attributes)
+    block
+      
+mixin infoCol()
+  +e.col
+    block
+
+mixin infoImage(img)
+  +e('img')(src="#{img}", alt="").image&attributes(attributes)

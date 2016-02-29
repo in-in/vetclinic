@@ -1,0 +1,12 @@
+include ../blocks/inner/inner
+include ../blocks/articlesMore/articlesMore
+
+extends ../blocks/layout-default/layout-default
+
+block head
+  - var pageType = 'inner'
+  - var articles = true
+
+block content
+  +inner()
+    +articlesMore()

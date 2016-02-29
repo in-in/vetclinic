@@ -1,0 +1,13 @@
+mixin doctors(list)
+  +b.doctors&attributes(attributes)
+    +e.header
+      +infoBlock()
+        +infoTitle() Hаши ветеринары
+    +e.list
+      each item in list
+        +e.card
+          +e('img')(src="images/#{item[2]}", alt="doc1").image
+          +e.info
+            +e('h4').name= item[0]
+            +e('p').position= item[1]
+      

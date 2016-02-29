@@ -1,0 +1,16 @@
+mixin filters(list)
+  +b.filters&attributes(attributes)
+    each item in list
+      +e.item.filters__item--mobile
+        +e.back
+          +e('a')(href="#0").links Услуги
+          +e('a')(href="#0").links Цены
+          +e('a')(href="#0").links Статьи
+        +icon(item.icon).filters__icon
+        +e('h3').title= item.title
+
+mixin filtersMobile(list)
+  +b.filtersMobile&attributes(attributes)
+    each item in list
+      +e('a')(href="#0").item
+        +icon(item.icon).filtersMobile__icon

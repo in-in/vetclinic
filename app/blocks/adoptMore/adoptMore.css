@@ -1,0 +1,10 @@
+.adoptMore
+{
+  display: block;
+}
+
+.adoptMore__info
+{
+  background-color: var(--innerBg);
+  padding-bottom: 6.25rem; /* 100/16 */
+}

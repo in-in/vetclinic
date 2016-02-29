@@ -1,0 +1,17 @@
+mixin articles(list)
+  +b('section').articles
+    +e('h4').title.title
+      block
+    +e('ul').list
+      each item in list
+        +e('a')(href="#0").link= item.name
+
+mixin articlesMobile(list)
+  +b('section').articles&attributes(attributes)
+    each item in list
+      +e.item
+        +e('img')(src="#{item.img}", alt="").image
+        +e('h4').title.title= item.title
+        +e.info
+          +e('span').date.title= item.date
+          +e('a')(href="#0").link Подробнее

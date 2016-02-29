@@ -1,0 +1,9 @@
+mixin job(list)
+  +b.job
+    each item in list
+      +e.item
+        +e('h4').title.title= item.title
+        +e('span').description.lightText= item.desc
+        +e.button
+          +e('a')(href="#0").more Подробнее
+    +e('a')(href="#0").link.mainLink Посмотреть все вакансии

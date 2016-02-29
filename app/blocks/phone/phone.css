@@ -1,0 +1,30 @@
+.phone
+{
+  margin: 0;
+  font-size: responsive .75rem 1.625rem;
+  font-range: 20rem 60rem;
+  font-weight: 700;
+}
+
+.phone span
+{
+  color: var(--accentColor);
+}
+
+@media (max-width: 900px)
+{
+  .phone--large,
+  .phone--large span
+  {
+    color: #fff;
+  }
+
+  .phone--mobile
+  {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: .688rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}

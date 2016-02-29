@@ -1,0 +1,19 @@
+include ../info/info
+include ../tabs/tabs
+
+mixin aboutMenu(list)
+  +infoBlock()
+    +infoTitle() 
+    +infoInner().--sidebar
+      +b.aboutMenu&attributes(attributes)
+        +tabsLink(list).aboutMenu__item
+        
+
+
+
+        //- +tabsLink([
+        //-   ['Лаборатория', 'title'],
+        //-   ['Наши ветеринары', 'title'],
+        //-   ['Вакансии', 'title'],
+        //-   ['Лицензии и сертификаты', 'title']
+        //- ]).aboutMenu__item

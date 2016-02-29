@@ -1,0 +1,24 @@
+include ../info/info
+include ../aboutInner/aboutInner
+
+mixin adoptMore()
+  +b.adoptMore&attributes(attributes)
+    +e.header
+      +infoBlock()
+        +infoTitle().--inner Персидская кошка - марфуша
+    +e.info
+      +aboutInner().--clinika
+        .aboutInner__header
+          +e('img')(src="images/adopt_more.jpg", alt="adopt_more").image
+          .aboutInner__heading.aboutInner__heading--center
+            h2.aboutInner__title персидская кошка - марфуша
+        .aboutInner__main
+          p.aboutInner__text
+            | Марфуша похожа на роскошную кустодиевскую красотку: есть на что посмотреть и за что подержаться Или на солидную, умиротворённую и пригожую купчиху. Очень уютная кошка: мягкая, круглая во всех местах, плюшевая и на ощупь приятная. Нрава ласкового и спокойного, любит понежиться в эффектных позах, помурчать да в окошко поглядеть. Марфуше около 5-х лет.
+          
+          p.aboutInner__text
+            | Марфа стерилизована, приучена к качественному сухому корму, в лоток ходит исправно. Хочет быть единственной и любимой кошко-королевой. Сородичей своих не жалует. Очень ждёт заботливых хозяев. Обещает принести в дом мир, уют и покой.
+          span.aboutInner__text Автор: Анна Доброва
+          span.aboutInner__text Населенный пункт: Санкт-Петербург
+          a(href="#0").aboutInner__text.mainLink annapers@mail.ru
+          span.aboutInner__text +7977 444 88 88

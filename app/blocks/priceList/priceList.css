@@ -1,0 +1,77 @@
+.priceList
+{
+  width: 100%;
+}
+
+.accordion
+{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul
+{
+  display: none;
+}
+
+.accordion li
+{
+  list-style-type: none;
+}
+
+.accordion input[type=checkbox]
+{
+  position: absolute;
+  opacity: 0;
+}
+
+.accordion__label,
+.accordion__link
+{
+  position: relative;
+  display: block;
+}
+
+.accordion input[type=checkbox]:checked + label + ul,
+.accordion input[type=checkbox]:checked + label:nth-of-type(n) + ul
+{
+  display: block;
+}
+
+.accordion input[type=checkbox]:checked + .accordion__label::before
+{
+  transform: rotate(0);
+}
+
+.accordion__item
+{
+  display: block;
+  margin-bottom: 1px;
+  background-color: var(--infoHeaderBg);
+  line-height: 2.25rem;
+}
+
+.accordion__label
+{
+  display: block;
+  padding: .688rem 1.438rem; /* 11/16, 23/16 */
+  cursor: pointer;
+  color: var(--mainTextColor);
+  font-size: var(--mediumFontSize);
+  font-weight: 600;
+}
+
+.accordion__label::before
+{
+  display: inline-block;
+  width: .5rem; /* 8/16 */
+  height: .625rem; /* 10/16 */
+  margin-right: .813rem; /* 13/16 */
+  content: '';
+  transform: rotate(90deg);
+  transform-origin: center;
+  background-image: url(../../images/triangle.svg);
+  background-repeat: no-repeat;
+}

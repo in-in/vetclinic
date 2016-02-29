@@ -1,0 +1,15 @@
+include ../breadcrumbs/breadcrumbs
+include ../serviceList/serviceList
+include ../banner/banner
+include ../info/info
+include ../articles/articles
+include ../filters/filters
+
+mixin servicePage()
+  .servicePage__wrap
+    .servicePage__filters
+      +filtersMobile(getData('filters'))
+    .servicePage__content
+      +infoBlock()
+        +infoTitle() Bиды услуг
+      +serviceList(getData('serviceList'))

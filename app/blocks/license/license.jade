@@ -1,0 +1,13 @@
+mixin license(list)
+  +b.license&attributes(attributes)
+    +e.header
+      +infoBlock()
+        +infoTitle() Лицензии и сертификаты
+    +e.list
+      h4 Лицензии и сертификаты “ГОСВЕТКЛИНИКИ”
+      each item in list
+        +e.item
+          +e('img')(src="images/#{item[0]}", alt="license1").image
+          +e.info
+            span= item[1]
+            a(href="#0") посмотреть скан

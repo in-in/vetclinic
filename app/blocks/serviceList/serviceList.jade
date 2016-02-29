@@ -1,0 +1,8 @@
+include ../icon/icon
+
+mixin serviceList(list)
+  +b.serviceList&attributes(attributes)
+    each item in list
+      +e.item
+        +icon('icon-arrow', 10, 16).serviceList__icon
+        +e('a')(href="service-more.html").title.title= item[0]

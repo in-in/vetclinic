@@ -1,0 +1,20 @@
+include ../../../node_modules/bemto.jade/bemto
+include ../page/page
+include ../header/header
+include ../footer/footer
+include ../scripts/scripts
+
+- bemto_settings_element = '__'
+- bemto_settings_modifier = '--'
+
+
+doctype html
+html(lang='ru')
+  include ../head/head
+  include ../icon/icon-sprite
+  +page
+    +header
+    block content
+    +footer
+
+    +scripts(['app.min.js'])

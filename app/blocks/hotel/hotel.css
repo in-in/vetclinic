@@ -1,0 +1,15 @@
+.hotel
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.hotel__header
+{
+  margin-bottom: .625rem; /* 10/16 */
+}
+
+.hotel__info
+{
+  background-color: var(--innerBg);
+}

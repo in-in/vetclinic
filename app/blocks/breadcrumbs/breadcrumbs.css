@@ -1,0 +1,21 @@
+.breadcrumbs
+{
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item
+{
+  display: inline-block;
+  list-style-type: none;
+}
+
+.breadcrumbs__link
+{
+  text-transform: uppercase;
+  color: var(--breadcrumbsItemColor);
+  font-size: .625rem;
+  font-weight: 300;
+  height: 1.875rem; /* 30/16 */
+  line-height: 1.875rem; /* 30/16 */
+}

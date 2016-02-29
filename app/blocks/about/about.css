@@ -1,0 +1,15 @@
+.about
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.about__header
+{
+  margin-bottom: .625rem; /* 10/16 */
+}
+
+.about__info
+{
+  background-color: var(--innerBg);
+}

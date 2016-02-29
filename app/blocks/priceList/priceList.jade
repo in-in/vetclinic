@@ -1,0 +1,14 @@
+include ../innerList/innerList
+
+mixin priceList(items)
+  +b.priceList&attributes(attributes)
+    ul.accordion
+      each item, index in items
+        li.accordion__item
+          input(type="checkbox" name ="level-#{index+1}" id="level-#{index+1}").accordion__input
+          label(for="level-#{index+1}").accordion__label= item.title
+          +innerList()
+            if item.list
+              +innerItems(item.list)
+
+      

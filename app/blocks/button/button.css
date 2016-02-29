@@ -1,0 +1,11 @@
+.button
+{
+  float: left;
+  cursor: pointer;
+}
+
+.button:active
+{
+  transform: translate(0, .313rem);
+  border-bottom: 1px solid;
+}

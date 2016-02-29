@@ -1,0 +1,70 @@
+.index
+{
+  flex-direction: column;
+}
+
+.index__group
+{
+  width: 100%;
+  margin-bottom: var(--marginCommon);
+}
+
+.index__group--about
+{
+  height: 15.25rem;
+}
+
+.index__group--articles-mobile,
+.index__group--service
+{
+  display: none;
+}
+
+.index__slider,
+.index__banner--big,
+.index__wide,
+.index__about,
+.index__articles
+{
+  lost-column: 12/16;
+}
+
+.index__staff,
+.index__banner--small,
+.index__narrow,
+.index__quiz,
+.index__job
+{
+  lost-column: 4/16;
+}
+
+@media (--mx)
+{
+  .index__group--slider,
+  .index__group--banner,
+  .index__slider,
+  .index__staff,
+  .banner,
+  .index__quiz,
+  .index__articles
+  {
+    display: none;
+  }
+
+  .index__about,
+  .index__job
+  {
+    lost-column: 16/16;
+  }
+
+  .index__group--articles-mobile,
+  .index__group--service
+  {
+    display: flex;
+  }
+
+  .index__group--about
+  {
+    height: auto;
+  }
+}

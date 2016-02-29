@@ -1,0 +1,72 @@
+.innerList
+{
+  margin: 0;
+  padding: 0;
+}
+
+.innerList__item
+{
+  display: flex;
+  align-items: center;
+  min-height: 2.625rem; /* 42/16 */
+  padding-top: .625rem; /* 10/16 */
+  padding-bottom: .625rem; /* 10/16 */
+}
+
+.innerList__item:nth-child(odd)
+{
+  background-color: #f3f3f3;
+}
+
+.innerList__item:nth-child(even)
+{
+  background-color: #fff;
+}
+
+.innerList span
+{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--mainTextColor);
+  font-size: var(--mediumFontSize);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.innerList__number
+{
+  lost-column: 1/10 0 0;
+
+  justify-content: center;
+}
+
+.innerList__title
+{
+  lost-column: 4/10 0 0;
+
+  justify-content: flex-start;
+}
+
+.innerList__unit
+{
+  lost-column: 3/10 0 0;
+
+  justify-content: center;
+}
+
+.innerList__price
+{
+  lost-column: 2/10 0 0;
+
+  justify-content: center;
+}
+
+.innerList__description span
+{
+  color: var(--mainTextColor);
+  font-size: var(--mediumFontSize);
+  font-weight: 600;
+}

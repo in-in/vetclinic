@@ -1,0 +1,11 @@
+.price,
+.price__filters
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.price__content
+{
+  flex-direction: column;
+}

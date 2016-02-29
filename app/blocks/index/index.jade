@@ -1,0 +1,178 @@
+include ../container/container
+include ../section/section
+include ../heading/heading
+include ../subheading/subheading
+include ../slider/slider
+include ../widget/widget
+include ../doctor/doctor
+include ../banner/banner
+include ../info/info
+include ../list/list
+include ../articles/articles
+include ../job/job
+include ../service/service
+
+mixin index()
+  +b.index
+    .index__group.index__group--slider
+      +container()
+        .index__slider
+          +slider()
+        .index__staff
+          +staff()
+    .index__group.index__group--banner
+      +container()
+        .index__wide
+          +banner([
+            ['icon-tube'],
+            ['icon-lab'],
+            ['icon-microscope']
+          ]).banner--tall
+            +bannerSubtitle() Лаболатория ветклини
+            +bannerTitle() Гарантированый результат
+        .index__narrow
+          +banner([['icon-house']]).banner--sidebar.banner--tall
+            +bannerTitle() Зоогостиница
+    .index__group.index__group--about
+      +container()
+        .index__about
+          +infoBlock()
+            +infoTitle().--mobile О ветклинике
+            +infoInner().--about
+              +infoText().--about
+                p 
+                  b.bold ГОСВЕТКЛИНИКА
+                  |- один из ведущих и наиболее современный центр по оказанию помощи животным.
+                
+                p Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи, стоматологи, кардиологи и многие другие. Осуществляется...
+              +infoImage('images/about.png').--about
+        .index__quiz
+          +infoBlock() 
+            +infoTitle() Опрос
+            +infoInner().--col
+              +list([
+                {"name": 'Чертановская'},
+                {"name": 'Беговая'},
+                {"name": 'Савеловская'},
+                {"name": 'Измайловская'},
+                {"name": 'Кантемировская'},
+                {"name": 'Динамо'}
+              ]) В какой из наших клиник вам удобнее обслуживаться территориально?
+    .index__group
+      +container()
+        .index__articles
+          +infoBlock()
+            +infoTitle() Статьи
+            +infoInner()
+              +infoCol()
+                +articles([
+                  {'name': 'Противовирусная терапия'},
+                  {'name': 'Заболевания ушей'},
+                  {'name': 'Профилактика заболеваний'},
+                  {'name': 'Офтальмология'},
+                  {'name': 'Внутренние незаразные болезни'},
+                  {'name': 'Диагностика заболеваний'},
+                  {'name': 'Диетическое кормление'},
+                  {'name': 'Альтернативное лечение'}
+                ]) Для ветеринарных врачей
+              +infoCol()
+                +articles([
+                  {'name': 'Ухода за животными'},
+                  {'name': 'Профилактика болезней'}
+              ]) Для владельцев животных
+                +articles([
+                  {'name': 'Собаки'},
+                  {'name': 'Кошки'},
+                  {'name': 'Лошади'},
+                  {'name': 'Птицы'}
+              ]) По видам животных
+              +infoCol()
+                +articles([
+                  {'name': 'Предметы ухода'},
+                  {'name': 'Профилактика'}
+              ]) Виды ухода
+                +articles([
+                  {'name': 'Собаки'},
+                  {'name': 'Кошки'},
+                  {'name': 'Лошади'},
+                  {'name': 'Птицы'}
+              ]) По видам
+        .index__job
+          +infoBlock() 
+            +infoTitle().--mobile Вакансии
+            +infoInner()
+              +job([
+                {
+                  "title": "Хирург",
+                  "desc": "Опыт работы: от 5 лет"
+                },
+                {
+                  "title": "Стоматолог",
+                  "desc": "Опыт работы: от 3 лет"
+                },
+              ])
+    .index__group.index__group--service
+      +container()
+        +service([
+          {
+            "title": "Лаболатория ветклиники",
+            "type": 'service__item--first',
+            "icon": "icon-lab"
+          },
+          {
+            "title": "Зоогостиница",
+            "type": 'service__item--second',
+            "icon": "icon-house"
+          },
+          {
+            "title": "Груминг",
+            "type": 'service__item--second',
+            "icon": "icon-hair"
+          },
+          {
+            "title": "Дрессировка",
+            "type": 'service__item--first',
+            "icon": "icon-man"
+          },
+          {
+            "title": "Зоотакси",
+            "type": 'service__item--first',
+            "icon": "icon-taxi"
+          },
+          {
+            "title": "Ищем хозяев",
+            "type": 'service__item--second',
+            "icon": "icon-magnifier"
+          },
+        ])
+    .index__group.index__group--articles-mobile
+      +container()
+        +infoBlock()
+          +infoTitle().--mobile Статьи
+          +infoInner().--articles
+            +articlesMobile([
+              {
+                "title": 'Профилактика ушных заболеваний у собак',
+                "img": "images/articles1.png",
+                "date": "12.12.2015"
+              },
+              {
+                "title": 'Как правильно кормить персидских котов',
+                "img": "images/articles2.png",
+                "date": "12.12.2015"
+              }
+            ])
+    .index__group.index__group--banner
+      +container()
+        .index__narrow
+          +banner([['icon-hair']]).banner--small.banner--tall
+            +bannerTitle() Груминг
+        .index__narrow
+          +banner([['icon-man']]).banner--small.banner--tall
+            +bannerTitle() Дрессировка
+        .index__narrow
+          +banner([['icon-taxi']]).banner--small.banner--tall
+            +bannerTitle() Зоотакси
+        .index__narrow
+          +banner(null, 'adopt_banner.jpg').banner--small.banner--light.banner--tall
+            +bannerLink() Котенок, 3 месяца ищет хозяина

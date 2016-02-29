@@ -1,0 +1,67 @@
+.e404
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.e404__header
+{
+  margin-bottom: .625rem; /* 10/16 */
+}
+
+.e404__info
+{
+  position: relative;
+  background-color: var(--innerBg);
+}
+
+.e404__message
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 19.688rem; /* 315/16 */
+  height: 8.063rem; /* 129/16 */
+  padding-right: 1.25rem; /* 20/16 */
+  padding-left: 2.5rem; /* 40/16 */
+  background-color: var(--innerBg);
+}
+
+.e404__message h4
+{
+  margin: 0;
+  margin-right: 1.563rem; /* 25/16 */
+  font-size: 4.188rem; /* 67/16 */
+  font-weight: 700;
+}
+
+.e404__message span
+{
+  font-size: 1.5rem; /* 24/16 */
+  font-weight: 400;
+}
+
+.e404__search
+{
+  flex-direction: column;
+  padding-top: 45px;
+  padding-left: 50px;
+  background-color: var(--innerBg);
+  font-size: var(--largeFontSize);
+  font-weight: 400;
+}
+
+.e404__search p
+{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: var(--largeFontSize);
+  font-weight: 400;
+}
+
+.e404__searchField
+{
+  max-width: 21.375rem; /* 342/16 */
+  margin-bottom: 2.5rem; /* 40/16 */
+}

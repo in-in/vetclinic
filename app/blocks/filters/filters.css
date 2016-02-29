@@ -1,0 +1,154 @@
+.filters
+{
+  width: 100%;
+}
+
+.filters__item
+{
+  lost-column: 1/6 0 .625rem;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 6.625rem;
+  padding-top: .625rem;
+  padding-right: .625rem;
+  padding-bottom: .625rem;
+  padding-left: .625rem;
+  cursor: pointer;
+  background-color: var(--innerBg);
+
+  appearance: none;
+}
+
+.filters__title
+{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--mainTextColor);
+  font-size: var(--smallFontSize);
+  font-weight: 600;
+}
+
+.filters__icon
+{
+  width: 100%;
+  transition: transform .3s ease-out, width .6s ease-out;
+  transform: translateX(0);
+  fill: var(--filtersIconColor);
+}
+
+.filters__back
+{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.filters__links
+{
+  margin-bottom: .2rem;
+  font-size: var(--smallFontSize);
+}
+
+.filters__links:hover
+{
+  text-decoration: underline;
+}
+
+.filters__item:hover .filters__back
+{
+  display: flex;
+}
+
+.filters__item:hover .filters__icon
+{
+  display: none;
+}
+
+.filtersMobile
+{
+  display: none;
+  width: 100%;
+  padding-top: .625rem; /* 10/16 */
+  padding-bottom: .625rem; /* 10/16 */
+}
+
+.filtersMobile__item
+{
+  lost-column: 1/6 0 6px;
+
+  justify-content: center;
+  align-items: center;
+  height: 2.813rem; /* 45/16 */
+  cursor: pointer;
+  transition: transform .2s ease;
+  background-color: var(--innerBg);
+}
+
+.filtersMobile__item:active
+{
+  transform: scale(.9);
+}
+
+.filtersMobile__icon
+{
+  width: 1.5rem; /* 24/16 */
+  fill: var(--filtersIconColor);
+}
+
+.filtersMobile__item:hover
+{
+  background-color: var(--filtersIconColor);
+}
+
+.filtersMobile__item:hover .filtersMobile__icon
+{
+  fill: var(--innerBg);
+}
+
+@media (--mx)
+{
+  .filters
+  {
+    flex-wrap: wrap;
+  }
+
+  .filters__item--mobile
+  {
+    lost-column: 1/2 2 3.333677813374049%;
+
+    height: 9.063rem;
+    margin-bottom: 3.333677813374049vw;
+  }
+
+  .filters__item--mobile:hover
+  {
+    background-color: var(--widgetBgPrimary);
+  }
+
+  .filters__item--mobile:hover .filters__title
+  {
+    display: none;
+  }
+
+  .filters__back
+  {
+    justify-content: space-between;
+  }
+
+  .filters__links
+  {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .filtersMobile
+  {
+    display: flex;
+  }
+}

@@ -1,0 +1,12 @@
+include ../blocks/inner/inner
+include ../blocks/adoptMore/adoptMore
+
+extends ../blocks/layout-default/layout-default
+
+block head
+  - var pageType = 'inner'
+  - var adopt = true
+
+block content
+  +inner()
+    +adoptMore()

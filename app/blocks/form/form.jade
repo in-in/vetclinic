@@ -1,0 +1,18 @@
+mixin form()
+  +b('form').form&attributes(attributes)
+
+mixin form()
+  +b('form')(method="POST", action='').form
+      +e.field
+          +e('input')(id="inputName", type='text', maxlength='100', placeholder="Ваше имя", required).input
+          +e('label')(for='inputName').label *
+      +e.field.--half
+        +e.field.--left
+            +e('input')(id="inputPhone", type='text', maxlength='100', placeholder="Ваш телефон", required).input
+            +e('label')(for='inputPhone').label *
+        +e.field.--right
+            +e('input')(id="inputTime", type='text', maxlength='100', placeholder="Удобное время").input
+      +e.field
+          +e('input')(id="inputEmail", type='email', placeholder="Ваш e-mail").input
+      +e('button')(type="submit" value='Отправить').button
+      +e.legend Мы гарантируем, что ваши данные в безопасности! Мы не передаем ваши данные 3-м лицам
