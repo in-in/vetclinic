@@ -1,38 +1,19 @@
 include ../container/container
-include ../logo/logo
 include ../menu/menu
-include ../menu-mobile/menu-mobile
 include ../search/search
 include ../phone/phone
-include ../filters/filters
 include ../heading/heading
-include ../widget/widget
 
 mixin header()
   +b('header').header&attributes(attributes)
-      .header__top
-        +container()
-          .header__menu-mobile
-            +menu-mobile()
-          .header__logo
-            +logo()
-          .header__middle
-            +heading() Госветклиника
-            +menu(getData('menu'))#js-top-menu
-          .header__last
-            +phone().--large 7 (495) 
-              span 500 50 50
-            +search()
-      .header__mobile(class= (pageType === 'index') ? "header__mobile--main" : "")
-        +container()
-          .header__mobile-wrap
-            +logo()
-            +heading().heading--mobile Госветклиника
-            +widget().widget--primary.button Cрочный вызов ветеринара
-      .header__bottom(class= (pageType === 'index') ? "" : "header__bottom--inner")
-        +container()
-          .header__filters
-            +filters(getData('filters'))
-          .header__widget
-            +widget().widget--primary.button Cрочный вызов ветеринара
-            +widget().widget--second.button Записаться к врачу
+    +container()
+      .header__col.header__col--wide
+        .header__row
+          .header__heading
+            +heading() Ветклиника
+          .header__search
+            +search().shadow
+        +menu(getData('menu'))#js-top-menu
+      .header__col.header__col--narrow
+        +phone() 7 (495)&nbsp;
+            span 500 50 50

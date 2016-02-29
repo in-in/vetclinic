@@ -1,7 +1,5 @@
 @lost flexbox flex;
-@lost gutter 2%;
-
-/* imports */
+@lost gutter .625rem; /* 10/16 */
 
 @import 'helpers/*.css';
 @import '../blocks/**/*.css';

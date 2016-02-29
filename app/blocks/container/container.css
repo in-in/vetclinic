@@ -1,16 +1,8 @@
 .container
 {
   width: 100%;
-  min-width: 20rem;
-  max-width: 60rem;
+  min-width: 20rem; /* 320/16 */
+  max-width: 60rem; /* 960/16 */
   height: 100%;
   margin: 0 auto;
-}
-
-@media (--mx)
-{
-  .container
-  {
-    padding: 0 .625rem;
-  }
 }

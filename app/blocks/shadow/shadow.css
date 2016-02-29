@@ -1,0 +1,4 @@
+.shadow
+{
+  box-shadow: inset .063rem .063rem .188rem 0 rgba(0, 0, 0, .25); /* 1/16, 1/16, 3/16 */
+}
