@@ -7,5 +7,3 @@ mixin banner(title, icon, img)
       +e.icon
         each item in icon
           +icon(item)
-    if img
-      +e('img')(src="images/#{img}", alt="banner").image

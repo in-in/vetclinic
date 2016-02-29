@@ -5,4 +5,6 @@
   max-width: 60rem; /* 960/16 */
   height: 100%;
   margin: 0 auto;
+  padding-right: .313rem; /* 5/16 */
+  padding-left: .313rem; /* 5/16 */
 }
