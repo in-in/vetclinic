@@ -1,6 +1,5 @@
 :root
 {
-  --mediumFontSize: 0.875rem;
   --largeFontSize: 1.125rem;
   --marginCommon: 0.625rem;
   --lightTextColor: #797979;
@@ -18,6 +17,7 @@
 
   --baseFontSize: 1rem;
   --smallFontSize: 0.75rem;
+  --mediumFontSize: 0.875rem;
   --mainBg: #ffd52e;
   --mainTextColor: #1a1a1a;
   --accentColor: #f44336;

@@ -1,5 +1,5 @@
 include ../container/container
-include ../section/section
+include ../hero/hero
 include ../heading/heading
 include ../subheading/subheading
 include ../slider/slider
@@ -14,7 +14,10 @@ include ../service/service
 
 mixin index()
   +b.index
-    .index__group.index__group--slider
+    .index__group
+      +container()
+        +hero()
+    .index__group
       +container()
         .index__slider
           +slider()
@@ -28,11 +31,8 @@ mixin index()
             ['icon-lab'],
             ['icon-microscope']
           ]).banner--tall
-            +bannerSubtitle() Лаболатория ветклини
-            +bannerTitle() Гарантированый результат
         .index__narrow
           +banner([['icon-house']]).banner--sidebar.banner--tall
-            +bannerTitle() Зоогостиница
     .index__group.index__group--about
       +container()
         .index__about
@@ -166,13 +166,9 @@ mixin index()
       +container()
         .index__narrow
           +banner([['icon-hair']]).banner--small.banner--tall
-            +bannerTitle() Груминг
         .index__narrow
           +banner([['icon-man']]).banner--small.banner--tall
-            +bannerTitle() Дрессировка
         .index__narrow
           +banner([['icon-taxi']]).banner--small.banner--tall
-            +bannerTitle() Зоотакси
         .index__narrow
           +banner(null, 'adopt_banner.jpg').banner--small.banner--light.banner--tall
-            +bannerLink() Котенок, 3 месяца ищет хозяина

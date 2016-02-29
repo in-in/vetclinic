@@ -1,0 +1,12 @@
+include ../slider/slider
+include ../banner/banner
+
+mixin hero()
+  +b.hero&attributes(attributes)
+    +e.slider
+      +slider()
+    +e.widget
+      +banner('Вызов ветеринара круглосуточно', ['icon-hair'])
+      +banner('Лаболатория ветклиники', ['icon-hair'])
+      +banner('Вызов ветеринара круглосуточно', ['icon-hair'])
+      +banner('Вызов ветеринара круглосуточно', ['icon-hair'])

@@ -1,22 +1,11 @@
-mixin banner(icon, img)
+include ../icon/icon
+
+mixin banner(title, icon, img)
   +b.banner&attributes(attributes)
+    +e.title= title
     if icon
       +e.icon
         each item in icon
           +icon(item)
     if img
       +e('img')(src="images/#{img}", alt="banner").image
-    .banner__text
-      block
-      
-mixin bannerTitle()
-  +b('h4').banner__title&attributes(attributes)
-    block
-
-mixin bannerSubtitle()
-  +b('p').banner__subtitle&attributes(attributes)
-    block
-
-mixin bannerLink()
-  +b('a')(href="#0").banner__link.mainLink
-    block
