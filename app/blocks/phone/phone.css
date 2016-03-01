@@ -6,5 +6,5 @@
 
 .phone span
 {
-  color: var(--accentColor);
+  color: var(--activeColor);
 }

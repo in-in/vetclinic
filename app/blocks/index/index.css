@@ -1,70 +1,28 @@
-.index
+.index,
+.index__main,
+.index__sidebar
 {
   flex-direction: column;
+  width: 100%;
 }
 
 .index__group
 {
   width: 100%;
-  margin-bottom: var(--marginCommon);
 }
 
-.index__group--about
+.index__main
 {
-  height: 15.25rem;
+  lost-column: 6/8;
+
+  padding-top: 2.813rem; /* 45/16 */
 }
 
-.index__group--articles-mobile,
-.index__group--service
+.index__sidebar
 {
-  display: none;
-}
+  lost-column: 2/8;
 
-.index__slider,
-.index__banner--big,
-.index__wide,
-.index__about,
-.index__articles
-{
-  lost-column: 12/16;
-}
-
-.index__staff,
-.index__banner--small,
-.index__narrow,
-.index__quiz,
-.index__job
-{
-  lost-column: 4/16;
-}
-
-@media (--mx)
-{
-  .index__group--slider,
-  .index__group--banner,
-  .index__slider,
-  .index__staff,
-  .banner,
-  .index__quiz,
-  .index__articles
-  {
-    display: none;
-  }
-
-  .index__about,
-  .index__job
-  {
-    lost-column: 16/16;
-  }
-
-  .index__group--articles-mobile,
-  .index__group--service
-  {
-    display: flex;
-  }
-
-  .index__group--about
-  {
-    height: auto;
-  }
+  padding-top: 2.813rem; /* 45/16 */
+  padding-right: .625rem; /* 10/16 */
+  padding-left: .625rem; /* 10/16 */
 }

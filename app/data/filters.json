@@ -1,32 +1,32 @@
 [
   {
     "title": "Собаки  ",
-    "icon": "icon-dog",
+    "icon": "dog",
     "link": "#0"
   },
   {
     "title": "Кошки",
-    "icon": "icon-cat",
+    "icon": "cat",
     "link": "#0"
   },
   {
     "title": "Птицы",
-    "icon": "icon-bird",
+    "icon": "bird",
     "link": "#0"
   },
   {
     "title": "Грызуны",
-    "icon": "icon-rat",
+    "icon": "rat",
     "link": "#0"
   },
   {
     "title": "Рыбы",
-    "icon": "icon-fish",
+    "icon": "fish",
     "link": "#0"
   },
   {
     "title": "Рептилии",
-    "icon": "icon-lizard",
+    "icon": "lizard",
     "link": "#0"
   }
 ]

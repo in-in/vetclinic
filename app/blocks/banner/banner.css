@@ -36,7 +36,7 @@
 
 .banner.banner--attention
 {
-  background-color: var(--accentColor);
+  background-color: var(--activeColor);
   margin-bottom: .438rem; /* 7/16 */
 }
 

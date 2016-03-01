@@ -11,7 +11,6 @@
   --bannerBg: #2a9dff;
   --infoHeaderBg: #e0e0e0;
   --infoHeaderColor: #302f2f;
-  --innerBg: #f3f3f3;
   --breadcrumbsItemColor: #a5a5a5;
   --formMainColor: #69b3ff;
 
@@ -19,8 +18,10 @@
   --smallFontSize: 0.75rem; /* 12/16 */
   --mediumFontSize: 0.875rem; /* 14/16 */
   --mainBg: #ffd52e;
+  --innerBg: #fff7d8;
   --mainTextColor: #1a1a1a;
-  --accentColor: #f44336;
+  --activeColor: #f44336;
+  --accentColor: #4ea4e7;
   --inputLightColor: #a5a5a5;
 }
 

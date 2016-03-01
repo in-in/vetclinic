@@ -109,7 +109,7 @@
 {
   position: absolute;
   right: .313rem; /* 5/16 */
-  bottom: 1.25rem; /* 20/16 */
+  bottom: 0;
   display: flex;
   margin: 0;
   list-style: none;
@@ -167,7 +167,6 @@
 .slider__title
 {
   padding-top: .938rem; /* 15/16 */
-  padding-bottom: 1.25rem; /* 20/16 */
   padding-left: 1.875rem; /* 30/16 */
   font-size: var(--mediumFontSize);
   font-weight: 600;
