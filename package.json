@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "clinika2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -52,6 +52,7 @@
     "postcss-svg": "^1.0.4",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
+    "slick-carousel": "^1.5.9",
     "source-map-loader": "^0.1.5",
     "webpack": "^1.12.12",
     "webpack-stats-logger": "^1.0.1",

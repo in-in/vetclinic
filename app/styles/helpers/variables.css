@@ -16,8 +16,8 @@
   --formMainColor: #69b3ff;
 
   --baseFontSize: 1rem;
-  --smallFontSize: 0.75rem;
-  --mediumFontSize: 0.875rem;
+  --smallFontSize: 0.75rem; /* 12/16 */
+  --mediumFontSize: 0.875rem; /* 14/16 */
   --mainBg: #ffd52e;
   --mainTextColor: #1a1a1a;
   --accentColor: #f44336;

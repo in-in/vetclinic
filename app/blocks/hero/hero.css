@@ -1,14 +1,13 @@
 .hero
 {
   width: 100%;
-  background-color: pink;
+  padding-top: 1.875rem; /* 30/16 */
+  background-color: var(--mainBg);
 }
 
 .hero__slider
 {
   lost-column: 6/8;
-
-  background-color: tomato;
 }
 
 .hero__widget
@@ -16,8 +15,7 @@
   lost-column: 2/8;
 
   flex-direction: column;
+  justify-content: space-between;
   padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
-  background-color: teal;
-  justify-content: space-between;
 }

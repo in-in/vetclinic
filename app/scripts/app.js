@@ -1,4 +1,2 @@
-import {common} from 'common';
-import '../blocks/tabs/tabs';
-
-common();
+// import '../blocks/tabs/tabs';
+import '../blocks/slider/slider';

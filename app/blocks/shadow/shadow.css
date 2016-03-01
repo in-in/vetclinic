@@ -1,4 +1,19 @@
-.shadow
+.shadow--inset
 {
   box-shadow: inset .063rem .063rem .188rem 0 rgba(0, 0, 0, .25); /* 1/16, 1/16, 3/16 */
+}
+
+.shadow:hover
+{
+  box-shadow: .125rem .125rem .625rem 0 rgba(0, 0, 0, .2); /* 2/16, 2/16, 10/16 */
+}
+
+.bullet__shadow
+{
+  box-shadow: .063rem .063rem .313rem 0 rgba(0, 0, 0, .25); /* 1/16, 1/16, 5/16, 0/16 */
+}
+
+.bullet__shadow--inset
+{
+  box-shadow: inset .063rem .063rem .188rem 0 rgba(0, 0, 0, .25); /* 1/16, 1/16, 3/16, 0/16 */
 }

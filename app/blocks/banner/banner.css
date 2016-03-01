@@ -14,7 +14,6 @@
 .banner__title
 {
   color: #fff;
-  border: 1px solid #000;
   font-size: var(--mediumFontSize);
   font-weight: 600;
 }
@@ -27,7 +26,6 @@
   max-width: 4.375rem;
   height: 4.375rem; /* 70/16 */
   border-radius: 50%;
-  background-color: brown;
 }
 
 .banner__icon svg
@@ -39,6 +37,7 @@
 .banner.banner--attention
 {
   background-color: var(--accentColor);
+  margin-bottom: .438rem; /* 7/16 */
 }
 
 .banner--attention .banner__title

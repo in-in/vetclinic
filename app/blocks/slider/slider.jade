@@ -1,4 +1,6 @@
-mixin slider()
+mixin slider(list)
   +b.slider&attributes(attributes)
-    +e.item
-      +e('img')(src="images/slider.png", alt="").image
+    each i in list
+      +e.item
+        +e('img')(src="../assets/images/#{i[0]}.jpg", alt="").image
+        +e('p').title= i[1]
