@@ -15,6 +15,11 @@ h1
   margin-top: 0;
 }
 
+p
+{
+  margin-bottom: 1.5rem; /* 24/16 */
+}
+
 input,
 label,
 textarea
@@ -40,6 +45,12 @@ small,
   font-weight: 600;
 }
 
+.text
+{
+  font-size: var(--mediumFontSize);
+  font-weight: 300;
+}
+
 .lightText
 {
   color: var(--lightTextColor);
@@ -47,15 +58,15 @@ small,
   font-weight: 300;
 }
 
-.mainLink
+.link
 {
   text-decoration: underline;
-  color: var(--bannerBg);
+  color: var(--accentColor);
   font-size: var(--mediumFontSize);
   font-weight: 300;
 }
 
-p .mainLink
+p .link
 {
   font-size: inherit;
   font-weight: inherit;

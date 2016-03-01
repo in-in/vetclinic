@@ -5,10 +5,17 @@
   overflow: hidden;
   width: 100%;
   height: 4.375rem; /* 70/16 */
+  margin-bottom: .75rem; /* 12/16 */
   padding-left: 1.875rem; /* 30/16 */
+  cursor: pointer;
   border-radius: 4.375rem; /* 70/16 */
   border-bottom-left-radius: 0;
   background-color: var(--bannerBg);
+}
+
+.banner:last-child
+{
+  margin-bottom: 0;
 }
 
 .banner__title
@@ -18,10 +25,12 @@
   font-weight: 600;
 }
 
-.banner__icon
+.banner__icon,
+.banner__image
 {
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   min-width: 4.375rem; /* 70/16 */
   max-width: 4.375rem;
   height: 4.375rem; /* 70/16 */
@@ -36,8 +45,8 @@
 
 .banner.banner--attention
 {
+  margin-bottom: 1.063rem; /* 17/16 */
   background-color: var(--activeColor);
-  margin-bottom: .438rem; /* 7/16 */
 }
 
 .banner--attention .banner__title
@@ -45,4 +54,19 @@
   text-transform: uppercase;
   font-size: var(--smallFontSize);
   font-weight: 700;
+}
+
+.banner.banner--sidebar
+{
+  background-color: var(--mainBg);
+}
+
+.banner.banner--sidebar .banner__title
+{
+  color: var(--mainTextColor);
+}
+
+.banner.banner--sidebar .banner__icon
+{
+  background-color: var(--accentColor);
 }

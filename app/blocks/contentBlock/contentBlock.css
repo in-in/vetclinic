@@ -2,6 +2,15 @@
 {
   flex-direction: column;
   width: 100%;
+  margin-bottom: 1.5rem; /* 24/16 */
+  border-top-left-radius: 1.25rem; /* 20/16 */
+  border-top-right-radius: 1.25rem; /* 20/16 */
+  border-bottom-right-radius: 1.25rem; /* 20/16 */
+}
+
+.contentBlock:last-child
+{
+  margin-bottom: 0;
 }
 
 .contentBlock__title
@@ -30,5 +39,26 @@
 
 .contentBlock__body
 {
+  border-bottom-right-radius: 1.25rem; /* 20/16 */
   background-color: var(--innerBg);
+}
+
+.contentBlock__text
+{
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1.5rem; /* 24/16 */
+  padding-bottom: 1.5rem; /* 24/16 */
+}
+
+.contentBlock--main .contentBlock__text
+{
+  padding-right: 2.375rem; /* 38/16 */
+  padding-left: 2.375rem; /* 38/16 */
+}
+
+.contentBlock--sidebar .contentBlock__text
+{
+  padding-right: 1.25rem; /* 20/16 */
+  padding-left: 1.25rem; /* 20/16 */
 }

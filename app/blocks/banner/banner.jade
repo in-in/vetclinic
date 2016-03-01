@@ -1,9 +1,12 @@
 include ../icon/icon
 
 mixin banner(title, icon, img)
-  +b.banner&attributes(attributes)
+  +b('a')(href="#0").banner&attributes(attributes)
     +e.title= title
     if icon
       +e.icon
         each item in icon
           +icon(item)
+    if img
+      +e.image
+        img(src="assets/images/#{img}", alt="adopt")

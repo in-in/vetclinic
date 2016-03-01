@@ -2,6 +2,7 @@ include ../container/container
 include ../hero/hero
 include ../filters/filters
 include ../contentBlock/contentBlock
+include ../list/list
 
 mixin index()
   +b.index
@@ -13,14 +14,30 @@ mixin index()
     .index__group
       +container()
         .index__main
-          +contentBlock('hospital', 'О ветклинике')
-          +contentBlock('book', 'Статьи')
+          +contentBlock('hospital', 'О ветклинике').--main.shadow
+            .contentBlock__image
+              img(src="assets/images/about.jpg", alt="about")
+            .contentBlock__text
+              p.text
+                span.bold ВЕТКЛИНИКА
+                |  - один из ведущих и наиболее современный центр по оказанию помощи животным.
+              p.text Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи, стоматологи, кардиологи и многие другие. Осуществляется помощь даже экзотическим животным. Оборудование кабинетов и
+                a(href="#0").link читать далее...
+              p.text Эндоскоп, рентгенографическая система вовсе не являются "экзотикой" Диагностика проводится только на самом современном и совершенном оборудовании отечественных и иностранных производителей.
+          +contentBlock('book', 'Статьи').shadow
         .index__sidebar
-          +contentBlock('check', 'Опрос')
-          +contentBlock('vacancy', 'Вакансии')
-          +banner('Лаболатория ветклиники', ['tubes']).shadow
-          +banner('Зоогостиница', ['hotel']).shadow
-          +banner('Зоотакси', ['taxi']).shadow
-          
-          
-      
+          +contentBlock('check', 'Опрос').--sidebar.shadow
+            .contentBlock__text
+              p.text В какой из наших клиник вам удобнее обслуживаться территориально?
+              +list([
+                  {"name": 'Чертановская'},
+                  {"name": 'Беговая'},
+                  {"name": 'Савеловская'},
+                  {"name": 'Измайловская'},
+                  {"name": 'Кантемировская'},
+                  {"name": 'Динамо'}
+                ])
+          +contentBlock('vacancy', 'Вакансии').shadow
+          +banner('Груминг', ['scissors']).--sidebar.shadow
+          +banner('Дрессировка', ['trainer']).--sidebar.shadow
+          +banner('Ищем хозяев', false, 'adopt.jpg').--sidebar.shadow
