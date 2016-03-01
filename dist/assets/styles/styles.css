@@ -1529,6 +1529,11 @@ p .link
           align-items: center;
 }
 
+.filters__links a
+{
+  line-height: 1.5;
+}
+
 .filters__links a:hover
 {
   text-decoration: underline;
