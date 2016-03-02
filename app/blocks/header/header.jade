@@ -5,7 +5,7 @@ include ../phone/phone
 include ../heading/heading
 
 mixin header()
-  +b('header').header&attributes(attributes)
+  +b('header').header(class=(inner ? "header--high" : undefined))&attributes(attributes)
     +container()
       .header__col.header__col--wide
         .header__row

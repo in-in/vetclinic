@@ -47,7 +47,7 @@ small,
 
 .text
 {
-  font-size: var(--mediumFontSize);
+  font-size: inherit;
   font-weight: 300;
 }
 

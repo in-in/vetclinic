@@ -1,9 +1,8 @@
 mixin breadcrumbs(current)
-  +b.breadcrumbs&attributes(attributes)
-    +b('ul').breadcrumbs
-      +e.item
-        +e('a')(href="/").link Госветлиника &nbsp;
-      +e.item
-        +e('a')(href="#0").link= "/" + "\xa0" + "\xA0" + current
+  +b('ul').breadcrumbs&attributes(attributes)
+    +e.item.light
+      a(href="/") ветлиника &nbsp;
+    +e.item.light
+      a(href="#0")= "/" + "\xa0" + "\xA0" + current
         
         

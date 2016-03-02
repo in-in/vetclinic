@@ -35,7 +35,7 @@
 		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
 		<meta name="msapplication-config" content="favicon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
-		<title>Clinika</title>
+		<title></title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700" rel="stylesheet" type="text/css">
@@ -210,7 +210,7 @@
 	</svg>
 
 	<body class="page">
-		<header class="header">
+		<header class="header header--high">
 			<div class="container">
 				<div class="header__col header__col--wide">
 					<div class="header__row">
@@ -222,7 +222,7 @@
 						</div>
 					</div>
 					<nav class="menu" id="js-top-menu">
-						<a href="about.html" class="menu__item">о ветклинике</a>
+						<a href="about.html" class="menu__item menu__item--active">о ветклинике</a>
 						<a href="service.html" class="menu__item">услуги</a>
 						<a href="price.html" class="menu__item">цены</a>
 						<a href="laboratory.html" class="menu__item">ветлаболатория</a>
@@ -238,359 +238,96 @@
 				</div>
 			</div>
 		</header>
-		<div class="index">
-			<div class="index__group">
-				<div class="hero">
-					<div class="container">
-						<div class="hero__slider">
-							<div class="slider">
-								<div class="slider__item">
-									<img src="../assets/images/slide-img1.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img2.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 красным собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img3.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 жёлтым собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img4.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 зелёным собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img5.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 голубым собакам</p>
-								</div>
-							</div>
-						</div>
-						<div class="hero__widget">
-							<a href="#0" class="banner banner--attention shadow">
-								<span class="banner__title">Вызов ветеринара круглосуточно</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-fast"></use></svg>
-								</span>
-							</a>
-							<a href="#0" class="banner shadow">
-								<span class="banner__title">Лаболатория ветклиники</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-tubes"></use></svg>
-								</span>
-							</a>
-							<a href="#0" class="banner shadow">
-								<span class="banner__title">Зоогостиница</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-hotel"></use></svg>
-								</span>
-							</a>
-							<a href="#0" class="banner shadow">
-								<span class="banner__title">Зоотакси</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-taxi"></use></svg>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="index__group">
-				<div class="container">
-					<div class="filters">
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-dog"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Собаки </h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-cat"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Кошки</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-bird"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Птицы</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-rat"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Грызуны</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-fish"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Рыбы</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-lizard"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Рептилии</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="index__group">
-				<div class="container">
-					<div class="index__main">
-						<div class="contentBlock contentBlock--main shadow">
-							<div class="contentBlock__title">
-								<div class="contentBlock__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-hospital"></use></svg>
-								</div>
-								<h4 class="title">О ветклинике</h4>
-							</div>
-							<div class="contentBlock__body">
-								<div class="contentBlock__image">
-									<img src="assets/images/about.jpg" alt="about" />
-								</div>
-								<div class="contentBlock__text">
-									<p class="text">
-										<span class="bold">ВЕТКЛИНИКА</span> - один из ведущих и наиболее современный центр по оказанию помощи животным.</p>
-									<p class="text">Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи,
-										стоматологи, кардиологи и многие другие. Осуществляется помощь даже экзотическим животным. Оборудование кабинетов
-										и
-										<a href="#0" class="link">читать далее...</a>
-									</p>
-									<p class="text">Эндоскоп, рентгенографическая система вовсе не являются "экзотикой" Диагностика проводится только на самом современном
-										и совершенном оборудовании отечественных и иностранных производителей.</p>
-								</div>
-							</div>
-						</div>
-						<div class="contentBlock contentBlock--col contentBlock--main shadow">
-							<div class="contentBlock__title">
-								<div class="contentBlock__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-book"></use></svg>
-								</div>
-								<h4 class="title">Статьи</h4>
-							</div>
-							<div class="contentBlock__body">
-								<div class="contentBlock__text">
-									<div class="contentBlock__col">
-										<section class="articles">
-											<h4 class="articles__title title">Для ветеринарных врачей</h4>
-											<ul class="articles__list">
-												<li class="articles__item">
-													<a href="#0">Противовирусная терапия</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Заболевания ушей</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Профилактика заболеваний</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Офтальмология</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Внутренние незаразные болезни</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Диагностика заболеваний</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Диетическое кормление</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Альтернативное лечение</a>
-												</li>
-											</ul>
-										</section>
-									</div>
-									<div class="contentBlock__col">
-										<section class="articles">
-											<h4 class="articles__title title">Для владельцев животных</h4>
-											<ul class="articles__list">
-												<li class="articles__item">
-													<a href="#0">Ухода за животными</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Профилактика болезней</a>
-												</li>
-											</ul>
-										</section>
-										<section class="articles">
-											<h4 class="articles__title title">По видам животных</h4>
-											<ul class="articles__list">
-												<li class="articles__item">
-													<a href="#0">Собаки</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Кошки</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Лошади</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Птицы</a>
-												</li>
-											</ul>
-										</section>
-									</div>
-									<div class="contentBlock__col">
-										<section class="articles">
-											<h4 class="articles__title title">Виды ухода</h4>
-											<ul class="articles__list">
-												<li class="articles__item">
-													<a href="#0">Предметы ухода</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Профилактика</a>
-												</li>
-											</ul>
-										</section>
-										<section class="articles">
-											<h4 class="articles__title title">По видам</h4>
-											<ul class="articles__list">
-												<li class="articles__item">
-													<a href="#0">Собаки</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Кошки</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Лошади</a>
-												</li>
-												<li class="articles__item">
-													<a href="#0">Птицы</a>
-												</li>
-											</ul>
-										</section>
+		<div class="inner">
+			<div class="container">
+				<div class="inner__wrap">
+					<div class="inner__group">
+						<div class="filters">
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-dog"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
 									</div>
 								</div>
+								<h4 class="title filters__title">Собаки </h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-cat"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Кошки</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-bird"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Птицы</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-rat"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Грызуны</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-fish"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Рыбы</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-lizard"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Рептилии</h4>
 							</div>
 						</div>
 					</div>
-					<div class="index__sidebar">
-						<div class="contentBlock contentBlock--sidebar shadow">
-							<div class="contentBlock__title">
-								<div class="contentBlock__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-check"></use></svg>
-								</div>
-								<h4 class="title">Опрос</h4>
-							</div>
-							<div class="contentBlock__body">
-								<div class="contentBlock__text">
-									<p class="text">В какой из наших клиник вам удобнее обслуживаться территориально?</p>
-									<section class="stations">
-										<form method="POST" action="" class="stations__list">
-											<div class="stations__item">
-												<input type="radio" name="stations" id="stations0" class="stations__input" />
-												<label for="stations0" class="stations__label">Чертановская</label>
-											</div>
-											<div class="stations__item">
-												<input type="radio" name="stations" id="stations1" class="stations__input" />
-												<label for="stations1" class="stations__label">Беговая</label>
-											</div>
-											<div class="stations__item">
-												<input type="radio" name="stations" id="stations2" checked="checked" class="stations__input" />
-												<label for="stations2" class="stations__label">Савеловская</label>
-											</div>
-											<div class="stations__item">
-												<input type="radio" name="stations" id="stations3" class="stations__input" />
-												<label for="stations3" class="stations__label">Измайловская</label>
-											</div>
-											<div class="stations__item">
-												<input type="radio" name="stations" id="stations4" class="stations__input" />
-												<label for="stations4" class="stations__label">Кантемировская</label>
-											</div>
-											<div class="stations__item">
-												<input type="radio" name="stations" id="stations5" class="stations__input" />
-												<label for="stations5" class="stations__label">Динамо</label>
-											</div>
-											<div class="stations__button">
-												<a href="#0" class="button">Ok</a>
-												<a href="#0" class="button">Итоги</a>
-											</div>
-										</form>
-									</section>
-								</div>
-							</div>
+					<div class="inner__group">
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item light">
+								<a href="/">ветлиника &nbsp;</a>
+							</li>
+							<li class="breadcrumbs__item light">
+								<a href="#0">/  о ветклинике</a>
+							</li>
+						</ul>
+					</div>
+					<div class="inner__group">
+						<div class="inner__main">
+							<p>.inner__main</p>
 						</div>
-						<div class="contentBlock contentBlock--sidebar shadow">
-							<div class="contentBlock__title">
-								<div class="contentBlock__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-vacancy"></use></svg>
-								</div>
-								<h4 class="title">Вакансии</h4>
-							</div>
-							<div class="contentBlock__body">
-								<div class="contentBlock__text">
-									<div class="job">
-										<div class="job__item">
-											<h4 class="job__title title">Хирург</h4>
-											<span class="job__description light">Опыт работы: от 5 лет</span>
-											<div class="job__button">
-												<a href="#0" class="button button--low">Подробнее</a>
-											</div>
-										</div>
-										<div class="job__item">
-											<h4 class="job__title title">Стоматолог</h4>
-											<span class="job__description light">Опыт работы: от 3 лет</span>
-											<div class="job__button">
-												<a href="#0" class="button button--low">Подробнее</a>
-											</div>
-										</div>
-										<a href="#0" class="job__link link">Посмотреть все вакансии</a>
-									</div>
-								</div>
-							</div>
+						<div class="inner__sidebar">
+							<p>.inner__sidebar</p>
 						</div>
-						<a href="#0" class="banner banner--sidebar shadow">
-							<span class="banner__title">Груминг</span>
-							<span class="banner__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-scissors"></use></svg>
-							</span>
-						</a>
-						<a href="#0" class="banner banner--sidebar shadow">
-							<span class="banner__title">Дрессировка</span>
-							<span class="banner__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-trainer"></use></svg>
-							</span>
-						</a>
-						<a href="#0" class="banner banner--sidebar shadow">
-							<span class="banner__title">Ищем хозяев</span>
-							<span class="banner__image">
-								<img src="assets/images/adopt.jpg" alt="adopt" />
-							</span>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -608,7 +345,7 @@
 						<div class="footer__col footer__col--narrow">
 							<div class="footer__inner">
 								<nav class="menu menu--footer">
-									<a href="about.html" class="menu__item">о ветклинике</a>
+									<a href="about.html" class="menu__item menu__item--active">о ветклинике</a>
 									<a href="service.html" class="menu__item">услуги</a>
 									<a href="price.html" class="menu__item">цены</a>
 									<a href="laboratory.html" class="menu__item">ветлаболатория</a>

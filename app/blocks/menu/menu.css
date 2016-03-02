@@ -42,7 +42,26 @@
   font-weight: 300;
 }
 
-.menu__item:hover
+.menu__item:hover,
+.menu__item--active
 {
   background-color: #fff;
+}
+
+.menu--footer
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu--footer .menu__item
+{
+  justify-content: flex-start;
+}
+
+.menu--footer .menu__item:hover
+{
+  text-decoration: underline;
+  color: var(--accentColor);
+  background: none;
 }

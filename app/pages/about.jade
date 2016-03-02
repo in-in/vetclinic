@@ -1,0 +1,10 @@
+include ../blocks/inner/inner
+
+extends ../blocks/layout-default/layout-default
+
+block head
+  -var inner = true
+  -var selected = 'about'
+
+block content
+  +inner()

@@ -2,6 +2,8 @@
 {
   margin: 0;
   padding: 0;
+  padding-left: .813rem; /* 13/16 */
+  border: 1px solid #000;
 }
 
 .breadcrumbs__item
@@ -10,12 +12,8 @@
   list-style-type: none;
 }
 
-.breadcrumbs__link
+.breadcrumbs__item a
 {
   text-transform: uppercase;
-  color: var(--breadcrumbsItemColor);
-  font-size: .625rem;
-  font-weight: 300;
-  height: 1.875rem; /* 30/16 */
-  line-height: 1.875rem; /* 30/16 */
+  font-size: .625rem; /* 10/16 */
 }

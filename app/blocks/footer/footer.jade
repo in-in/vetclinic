@@ -1,4 +1,8 @@
 include ../container/container
+include ../phone/phone
+include ../menu/menu
+include ../map/map
+
 include ../address/address
 include ../info/info
 include ../up/up
@@ -8,21 +12,21 @@ mixin footer()
       +container()
         .footer__wrap
           .footer__header
-            p foo 
-          .footer__col--menu
-            .footer__menu
-              +heading().--footer Госветклиника
-              +menu(getData('menu')).--footer
-          .footer__col--contact
-            .footer__map
-              .map
-                img(src="images/map.png", alt="")
-            .footer__contact
-              +infoBlock().--contact
-                +infoTitle().--mobile Контакты
-              +phone().--mobile 7 (495) 
+            h4.footer__title Ветклиника
+            +phone() 7 (495)&nbsp;
                 span 500 50 50
-              +address()
-              +address2()
-            p.copy © 2016 Госветклиника
+          .footer__body
+            .footer__col.footer__col--narrow
+              .footer__inner
+                +menu(getData('menu')).--footer
+            .footer__col.footer__col--wide
+              +map()
+            .footer__col.footer__col--narrow
+              .footer__inner
+                .footer__address
+                  p.title Адрес ветклиники:
+                  span.text Россия, Москва
+                  span.text Сухаревская площадь  
+                  span.text 16 / 18
+                span.footer__copy © 2016 Госветклиника
   +up()

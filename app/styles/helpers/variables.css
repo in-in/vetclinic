@@ -1,6 +1,5 @@
 :root
 {
-  --largeFontSize: 1.125rem;
   --marginCommon: 0.625rem;
   --accentActive: #d11c3a;
   --mobileHeaderColor: #2589de;
@@ -16,6 +15,7 @@
   --baseFontSize: 1rem;
   --smallFontSize: 0.75rem; /* 12/16 */
   --mediumFontSize: 0.875rem; /* 14/16 */
+  --largeFontSize: 1.125rem; /* 18/16 */
   --mainBg: #ffd52e;
   --innerBg: #fff7d8;
   --mainTextColor: #1a1a1a;
@@ -30,17 +30,3 @@
 @custom-media --m (width < 40em);
 @custom-media --mx (width < 56.25em);
 @custom-media --l (width < 60em);
-
-/*
-320px --> 20em
-480px --> 30em
-640px --> 40em
-768px --> 48em
-800px --> 50em
-960px --> 60em
-1024px --> 64em
-1120px --> 70em
-1280px --> 80em
-1366px --> 85,375em
-1440px --> 90em
-*/

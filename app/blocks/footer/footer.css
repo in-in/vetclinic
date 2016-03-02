@@ -1,8 +1,3 @@
-.footer
-{
-  background-color: pink;
-}
-
 .footer__wrap
 {
   flex-direction: column;
@@ -11,83 +6,62 @@
 
 .footer__header
 {
+  justify-content: space-between;
+  align-items: center;
   height: 3.5rem; /* 56/16 */
   padding-right: 1.563rem; /* 25/16 */
   padding-left: 1.563rem; /* 25/16 */
   border-top-left-radius: 1.25rem; /* 20/16 */
   border-top-right-radius: 1.25rem; /* 20/16 */
   background-color: var(--mainBg);
-  align-items: center;
 }
 
-.footer__col--menu
+.footer__title
 {
-  lost-column: 4/16;
+  text-transform: uppercase;
+  font-size: var(--largeFontSize);
+  font-weight: 700;
 }
 
-.footer__menu
+.footer__body
 {
-  flex-direction: column;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1.25rem; /* 20/16 */
-  padding-left: 1rem;
+  overflow: hidden;
+  border-bottom-right-radius: 1.25rem; /* 20/16 */
   background-color: var(--innerBg);
 }
 
-.footer__map
+.footer__col
 {
-  lost-column: 8/12;
-}
-
-.footer__contact
-{
-  lost-column: 4/12;
-
   flex-direction: column;
-  padding-top: .875rem; /* 14/16 */
-  background-color: var(--innerBg);
 }
 
-.footer__top--mobile
+.footer__col--narrow
 {
-  display: none;
+  lost-column: 2/8 0 0;
+}
+
+.footer__col--wide
+{
+  lost-column: 4/8 0 0;
+}
+
+.footer__inner
+{
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 3rem;
-  background-color: blue;
+  height: 14.375rem; /* 230/16 */
+  padding-top: 1.125rem; /* 18/16 */
+  padding-left: 1.188rem; /* 19/16 */
+  font-size: var(--mediumFontSize);
 }
 
-.copy
+.footer__address
 {
-  display: block;
-  width: 100%;
-  height: 3.125rem;
-  text-align: center;
-  color: #797979;
-  line-height: 3.125rem;
+  flex-direction: column;
 }
 
-@media (--mx)
+.footer__copy
 {
-  .footer__col--menu,
-  .footer__map
-  {
-    display: none;
-  }
-
-  .footer__col--contact,
-  .footer__contact
-  {
-    width: 100%;
-  }
-
-  .footer__bottom
-  {
-    background-color: var(--innerBg);
-  }
-
-  .copy
-  {
-    text-transform: uppercase;
-  }
+  font-size: var(--smallFontSize);
 }

@@ -1,30 +1,30 @@
 [
   {
     "title": "о ветклинике",
-    "link": "about.html"
+    "link": "about"
   },
   {
     "title": "услуги",
-    "link": "service.html"
+    "link": "service"
   },
   {
     "title": "цены",
-    "link": "price.html"
+    "link": "price"
   },
   {
     "title": "ветлаболатория",
-    "link": "laboratory.html"
+    "link": "laboratory"
   },
   {
     "title": "статьи",
-    "link": "articles.html"
+    "link": "articles"
   },
   {
     "title": "зоогостиница",
-    "link": "hotel.html"
+    "link": "hotel"
   },
   {
     "title": "контакты",
-    "link": "contacts.html"
+    "link": "contacts"
   }
 ]
