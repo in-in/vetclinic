@@ -5,24 +5,24 @@ include ../up/up
 
 mixin footer()
   +b('footer').footer
-    +e.top
       +container()
-        .footer__col--menu
-          .footer__menu
-            +heading().--footer Госветклиника
-            +menu(getData('menu')).--footer
-        .footer__col--contact
-          .footer__map
-            .map
-              img(src="images/map.png", alt="")
-          .footer__contact
-            +infoBlock().--contact
-              +infoTitle().--mobile Контакты
-            +phone().--mobile 7 (495) 
-              span 500 50 50
-            +address()
-            +address2()
-    +e.bottom
-      +container()
-        p.copy © 2016 Госветклиника
+        .footer__wrap
+          .footer__header
+            p foo 
+          .footer__col--menu
+            .footer__menu
+              +heading().--footer Госветклиника
+              +menu(getData('menu')).--footer
+          .footer__col--contact
+            .footer__map
+              .map
+                img(src="images/map.png", alt="")
+            .footer__contact
+              +infoBlock().--contact
+                +infoTitle().--mobile Контакты
+              +phone().--mobile 7 (495) 
+                span 500 50 50
+              +address()
+              +address2()
+            p.copy © 2016 Госветклиника
   +up()

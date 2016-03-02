@@ -2,7 +2,9 @@ include ../container/container
 include ../hero/hero
 include ../filters/filters
 include ../contentBlock/contentBlock
-include ../list/list
+include ../stations/stations
+include ../job/job
+include ../articles/articles
 
 mixin index()
   +b.index
@@ -24,20 +26,65 @@ mixin index()
               p.text Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи, стоматологи, кардиологи и многие другие. Осуществляется помощь даже экзотическим животным. Оборудование кабинетов и
                 a(href="#0").link читать далее...
               p.text Эндоскоп, рентгенографическая система вовсе не являются "экзотикой" Диагностика проводится только на самом современном и совершенном оборудовании отечественных и иностранных производителей.
-          +contentBlock('book', 'Статьи').shadow
+          +contentBlock('book', 'Статьи').--main.--col.shadow
+            .contentBlock__text
+              .contentBlock__col
+                +articles([
+                    {'name': 'Противовирусная терапия'},
+                    {'name': 'Заболевания ушей'},
+                    {'name': 'Профилактика заболеваний'},
+                    {'name': 'Офтальмология'},
+                    {'name': 'Внутренние незаразные болезни'},
+                    {'name': 'Диагностика заболеваний'},
+                    {'name': 'Диетическое кормление'},
+                    {'name': 'Альтернативное лечение'}
+                  ]) Для ветеринарных врачей
+              .contentBlock__col
+                +articles([
+                    {'name': 'Ухода за животными'},
+                    {'name': 'Профилактика болезней'}
+                ]) Для владельцев животных
+                +articles([
+                    {'name': 'Собаки'},
+                    {'name': 'Кошки'},
+                    {'name': 'Лошади'},
+                    {'name': 'Птицы'}
+                ]) По видам животных
+              .contentBlock__col
+                +articles([
+                    {'name': 'Предметы ухода'},
+                    {'name': 'Профилактика'}
+                ]) Виды ухода
+                +articles([
+                    {'name': 'Собаки'},
+                    {'name': 'Кошки'},
+                    {'name': 'Лошади'},
+                    {'name': 'Птицы'}
+                ]) По видам
         .index__sidebar
           +contentBlock('check', 'Опрос').--sidebar.shadow
             .contentBlock__text
               p.text В какой из наших клиник вам удобнее обслуживаться территориально?
-              +list([
-                  {"name": 'Чертановская'},
-                  {"name": 'Беговая'},
-                  {"name": 'Савеловская'},
-                  {"name": 'Измайловская'},
-                  {"name": 'Кантемировская'},
-                  {"name": 'Динамо'}
+              +stations([
+                  ['Чертановская'],
+                  ['Беговая'],
+                  ['Савеловская', true],
+                  ['Измайловская'],
+                  ['Кантемировская'],
+                  ['Динамо']
                 ])
-          +contentBlock('vacancy', 'Вакансии').shadow
+          +contentBlock('vacancy', 'Вакансии').--sidebar.shadow
+            .contentBlock__text
+              +job([
+                  {
+                    "title": "Хирург",
+                    "desc": "Опыт работы: от 5 лет"
+                  },
+                  {
+                    "title": "Стоматолог",
+                    "desc": "Опыт работы: от 3 лет"
+                  },
+                ])
           +banner('Груминг', ['scissors']).--sidebar.shadow
           +banner('Дрессировка', ['trainer']).--sidebar.shadow
           +banner('Ищем хозяев', false, 'adopt.jpg').--sidebar.shadow

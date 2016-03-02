@@ -1,0 +1,10 @@
+mixin stations(list)
+  +b('section').stations
+    +e('form')(method="POST", action='').list
+      each item, index in list
+        +e.item
+          +e('input')(type="radio", name='stations', id='stations#{index}', checked=(item[1] ? "checked" : undefined)).input
+          +e('label')(for='stations#{index}').label= item[0]
+      +e.button
+        a(href="#0").button Ok
+        a(href="#0").button Итоги

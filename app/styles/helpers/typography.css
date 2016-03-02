@@ -51,11 +51,11 @@ small,
   font-weight: 300;
 }
 
-.lightText
+.light
 {
   color: var(--lightTextColor);
-  font-size: var(--mediumFontSize);
   font-weight: 300;
+  font-size: inherit;
 }
 
 .link

@@ -2,50 +2,22 @@
 {
   flex-direction: column;
   width: 100%;
-  padding-right: .75rem;
 }
 
 .job__item
 {
   flex-direction: column;
   margin-bottom: 1.375rem;
+  font-size: var(--mediumFontSize);
+}
+
+.job__title
+{
+  margin-bottom: .313rem; /* 5/16 */
 }
 
 .job__button
 {
   justify-content: flex-end;
   padding-top: .5rem;
-}
-
-.job__more
-{
-  display: block;
-  height: 1.375rem;
-  padding: 0 .625rem;
-  cursor: pointer;
-  color: var(--mobileHeaderColor);
-  border: 1px solid var(--bannerBg);
-  font-size: var(--smallFontSize);
-  font-weight: 300;
-  line-height: 1.375rem;
-}
-
-.job__more:hover
-{
-  color: #fff;
-  background-color: var(--bannerBg);
-}
-
-.job__link
-{
-  padding-bottom: .625rem;
-}
-
-@media (--mx)
-{
-  .job
-  {
-    padding-right: 6%;
-    padding-left: 6%;
-  }
 }

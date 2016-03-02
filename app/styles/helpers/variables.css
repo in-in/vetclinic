@@ -2,7 +2,6 @@
 {
   --largeFontSize: 1.125rem;
   --marginCommon: 0.625rem;
-  --lightTextColor: #797979;
   --accentActive: #d11c3a;
   --mobileHeaderColor: #2589de;
   --filtersIconColor: #cb1533;
@@ -20,6 +19,7 @@
   --mainBg: #ffd52e;
   --innerBg: #fff7d8;
   --mainTextColor: #1a1a1a;
+  --lightTextColor: #797979;
   --activeColor: #f44336;
   --accentColor: #4ea4e7;
   --inputLightColor: #a5a5a5;

@@ -3,7 +3,7 @@ mixin job(list)
     each item in list
       +e.item
         +e('h4').title.title= item.title
-        +e('span').description.lightText= item.desc
+        +e('span').description.light= item.desc
         +e.button
-          +e('a')(href="#0").more Подробнее
-    +e('a')(href="#0").link.mainLink Посмотреть все вакансии
+          a(href="#0").button.button--low Подробнее
+    +e('a')(href="#0").link.link Посмотреть все вакансии

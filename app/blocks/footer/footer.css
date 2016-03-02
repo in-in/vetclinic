@@ -1,8 +1,23 @@
-.footer__col--contact
+.footer
 {
-  lost-column: 12/16;
+  background-color: pink;
+}
 
-  background-color: var(--innerBg);
+.footer__wrap
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer__header
+{
+  height: 3.5rem; /* 56/16 */
+  padding-right: 1.563rem; /* 25/16 */
+  padding-left: 1.563rem; /* 25/16 */
+  border-top-left-radius: 1.25rem; /* 20/16 */
+  border-top-right-radius: 1.25rem; /* 20/16 */
+  background-color: var(--mainBg);
+  align-items: center;
 }
 
 .footer__col--menu
