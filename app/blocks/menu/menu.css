@@ -59,7 +59,8 @@
   justify-content: flex-start;
 }
 
-.menu--footer .menu__item:hover
+.menu--footer .menu__item:hover,
+.menu--footer .menu__item--active
 {
   text-decoration: underline;
   color: var(--accentColor);

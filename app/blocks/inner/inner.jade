@@ -1,6 +1,11 @@
 include ../container/container
 include ../filters/filters
 include ../breadcrumbs/breadcrumbs
+include ../banner/banner
+include ../tabs/tabs
+include ../contentBlock/contentBlock
+include ../stations/stations
+include ../job/job
 
 mixin inner()
   +b.inner&attributes(attributes)
@@ -12,7 +17,48 @@ mixin inner()
           +breadcrumbs('о ветклинике')
         .inner__group
           .inner__main
-            p .inner__main
+            block
           .inner__sidebar
-            p .inner__sidebar
-      
+            .inner__group--sidebar
+              +banner('Вызов ветеринара круглосуточно', ['fast']).shadow.--attention.--nomargin
+            .inner__group--sidebar
+              .inner__menu.shadow
+                +tabsLink([
+                            ['Лаборатория', 'title'],
+                            ['Наши ветеринары', 'title'],
+                            ['Вакансии', 'title'],
+                            ['Лицензии и сертификаты', 'title']
+                          ])
+            .inner__group--sidebar
+              +banner('Лаболатория ветклиники', ['tubes']).shadow
+              +banner('Зоогостиница', ['hotel']).shadow
+              +banner('Зоотакси', ['taxi']).shadow
+            .inner__group--sidebar
+              +contentBlock('check', 'Опрос').--sidebar.shadow
+                .contentBlock__text
+                  p.text В какой из наших клиник вам удобнее обслуживаться территориально?
+                  +stations([
+                      ['Чертановская'],
+                      ['Беговая'],
+                      ['Савеловская', true],
+                      ['Измайловская'],
+                      ['Кантемировская'],
+                      ['Динамо']
+                    ])
+            .inner__group--sidebar
+              +contentBlock('vacancy', 'Вакансии').--sidebar.shadow
+                .contentBlock__text
+                  +job([
+                      {
+                        "title": "Хирург",
+                        "desc": "Опыт работы: от 5 лет"
+                      },
+                      {
+                        "title": "Стоматолог",
+                        "desc": "Опыт работы: от 3 лет"
+                      },
+                    ])
+            .inner__group--sidebar
+              +banner('Груминг', ['scissors']).--sidebar.shadow
+              +banner('Дрессировка', ['trainer']).--sidebar.shadow
+              +banner('Ищем хозяев', false, 'adopt.jpg').--sidebar.shadow

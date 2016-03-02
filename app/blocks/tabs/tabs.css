@@ -1,8 +1,23 @@
-.tab-links
+.tabLink
 {
   margin: 0;
-  list-style: none;
   padding: 0;
+  list-style: none;
+}
+
+.tabLink__item:not(:last-child)
+{
+  margin-bottom: .375rem; /* 6/16 */
+}
+
+.tabLink__item a
+{
+  transition: all .2s ease;
+}
+
+.tabLink__item a:hover
+{
+  color: var(--activeColor);
 }
 
 .tab-content

@@ -1,7 +1,7 @@
 mixin tabsLink(list)
-  ul.tab-links
+  +b('ul').tabLink&attributes(attributes)
     each item, index in list
-      li&attributes(attributes)
+      +e.item
         a(href='#tab#{index}', class='#{item[1]}')= item[0]
 
 mixin tabsContent()
