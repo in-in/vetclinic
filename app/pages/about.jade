@@ -1,12 +1,15 @@
+include ../blocks/container/container
+include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/tabs/tabs
 
 extends ../blocks/layout-default/layout-default
 
 block head
-  -var inner = true
   -var selected = 'about'
 
 block content
+  +container()
+    +breadcrumbs('о ветклинике')
   +inner()
     +tabsContent()

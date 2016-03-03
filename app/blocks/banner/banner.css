@@ -44,9 +44,9 @@
 }
 
 .banner.banner--attention
-{
-  margin-bottom: 1.063rem; /* 17/16 */
-  background-color: var(--activeColor);
+  {
+    margin-bottom: 1.063rem; /* 17/16 */
+    background-color: var(--activeColor);
 }
 
 .banner.banner--attention.banner--nomargin

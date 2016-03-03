@@ -3,17 +3,26 @@ include ../menu/menu
 include ../search/search
 include ../phone/phone
 include ../heading/heading
+include ../hero/hero
+include ../filters/filters
 
 mixin header()
-  +b('header').header(class=(inner ? "header--high" : undefined))&attributes(attributes)
+  +b('header').header&attributes(attributes)
     +container()
-      .header__col.header__col--wide
-        .header__row
-          a(href="index.html").header__heading
-            +heading() Ветклиника
-          .header__search
-            +search().shadow--inset
-        +menu(getData('menu'))#js-top-menu
-      .header__col.header__col--narrow
-        +phone() 7 (495)&nbsp;
-            span 500 50 50
+      .header__wrap
+        .header__top
+          .header__col.header__col--wide
+            .header__row
+              a(href="index.html").header__heading
+                +heading() Ветклиника
+              .header__search
+                +search().shadow--inset
+            +menu(getData('menu'))#js-top-menu
+          .header__col.header__col--narrow
+            +phone() 7 (495)&nbsp;
+                span 500 50 50
+        .header__bottom
+          if (selected == "index")
+            +hero()
+        .header__filters
+          +filters(getData('filters'))

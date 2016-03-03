@@ -15,6 +15,7 @@
   padding-right: 2.097535395909806%;
   padding-left: 4.195070791819612%;
   background-color: var(--innerBg);
+  border: 1px solid #000;
 }
 
 .serviceList__icon

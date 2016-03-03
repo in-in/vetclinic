@@ -1,5 +1,4 @@
 include ../container/container
-include ../filters/filters
 include ../breadcrumbs/breadcrumbs
 include ../banner/banner
 include ../tabs/tabs
@@ -12,23 +11,20 @@ mixin inner()
     +container()
       .inner__wrap
         .inner__group
-          +filters(getData('filters'))
-        .inner__group
-          +breadcrumbs('о ветклинике')
-        .inner__group
           .inner__main
             block
           .inner__sidebar
             .inner__group--sidebar
               +banner('Вызов ветеринара круглосуточно', ['fast']).shadow.--attention.--nomargin
-            .inner__group--sidebar
-              .inner__menu.shadow
-                +tabLink([
-                            ['Лаборатория', 'title'],
-                            ['Наши ветеринары', 'title'],
-                            ['Вакансии', 'title'],
-                            ['Лицензии и сертификаты', 'title']
-                          ])
+            if (selected === "about")
+              .inner__group--sidebar
+                .inner__menu.shadow
+                  +tabLink([
+                              ['Лаборатория', 'title'],
+                              ['Наши ветеринары', 'title'],
+                              ['Вакансии', 'title'],
+                              ['Лицензии и сертификаты', 'title']
+                            ])
             .inner__group--sidebar
               +banner('Лаболатория ветклиники', ['tubes']).shadow
               +banner('Зоогостиница', ['hotel']).shadow

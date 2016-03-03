@@ -19,15 +19,12 @@
 .index__main
 {
   lost-column: 6/8;
-
-  padding-top: 2.813rem; /* 45/16 */
 }
 
 .index__sidebar
 {
   lost-column: 2/8;
 
-  padding-top: 2.813rem; /* 45/16 */
   padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
 }

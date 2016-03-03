@@ -35,16 +35,15 @@
 		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
 		<meta name="msapplication-config" content="favicon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
-		<title>Clinika</title>
+		<title></title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700" rel="stylesheet" type="text/css">
 		<link href="assets/styles/styles.css" rel="stylesheet">
 	</head>
 	<svg width="0" height="0" style="position:absolute">
-		<symbol viewBox="0 0 9.9999997 16" id="icon-arrow">
-			<path d="M2.562 15.905l7.35-7.674a.346.346 0 0 0 0-.46L2.563.096C2.5.034 2.42 0 2.34 0s-.162.034-.22.096L.092 2.213a.333.333 0 0 0 0 .46L5.194 8 .092 13.327a.346.346 0 0 0 0 .46l2.028 2.118c.122.127.32.127.442 0z"
-			/>
+		<symbol viewBox="0 0 7.9999998 10" id="icon-arrow">
+			<path d="M0 0l8 5-8 5z" fill-rule="evenodd" />
 		</symbol>
 		<symbol viewBox="0 0 512 512" id="icon-bird">
 			<path d="M487.187 210.204c-3.366-7.992-7.18-17.052-7.187-19.638 0-39.832-23.775-77.02-66.945-104.715C370.985 58.864 315.208 44 256 44S141.015 58.863 98.945 85.852C55.775 113.546 32 150.734 32 190.566c-.005 2.586-3.82 11.646-7.187 19.638C14.933 233.666 0 269.122 0 309.887c0 43.005 27.167 83.132 76.495 112.99C124.567 451.975 188.317 468 256 468s131.433-16.025 179.505-45.123C484.833 393.02 512 352.892 512 309.887c0-40.765-14.932-76.22-24.813-99.683zM427.22 409.188C381.61 436.796 320.804 452 256 452s-125.61-15.204-171.22-42.812C40.427 382.342 16 347.076 16 309.888c0-37.534 14.177-71.197 23.56-93.474 5.082-12.07 8.44-20.042 8.44-25.848 0-6.21.707-12.36 2.08-18.415 1.573 9.215 4.77 17.968 9.588 25.323 11.35 17.33 30.284 25.313 53.313 22.467 14.405-1.775 25.49.66 32.94 7.25C158.4 238.223 160 259.07 160 276a8 8 0 0 0 16 0c0-20.287-2.214-45.53-19.48-60.797-11.04-9.76-26.35-13.508-45.5-11.143-17.138 2.114-29.91-3.05-37.967-15.354-10.32-15.76-10.745-42.063-.946-58.636.17-.285.31-.578.44-.874 9.246-10.802 20.98-20.86 35.038-29.88C147.108 73.965 199.817 60 256 60s108.892 13.964 148.416 39.318c14.057 9.018 25.792 19.077 35.037 29.88.13.295.272.588.44.873 9.8 16.574 9.376 42.878-.945 58.637-8.058 12.303-20.83 17.472-37.967 15.354-19.153-2.362-34.46 1.385-45.498 11.144C338.214 230.47 336 255.714 336 276a8 8 0 0 0 16 0c0-16.93 1.6-37.777 14.08-48.81 7.453-6.59 18.533-9.027 32.94-7.25 23.027 2.843 41.962-5.137 53.313-22.468 4.817-7.355 8.014-16.108 9.588-25.322a83.125 83.125 0 0 1 2.08 18.415c0 5.806 3.36 13.778 8.442 25.848 9.38 22.277 23.558 55.94 23.558 93.474 0 37.19-24.427 72.455-68.78 99.3z"
@@ -212,161 +211,163 @@
 	<body class="page">
 		<header class="header">
 			<div class="container">
-				<div class="header__col header__col--wide">
-					<div class="header__row">
-						<a href="index.html" class="header__heading">
-							<h1 class="heading">Ветклиника</h1>
-						</a>
-						<div class="header__search">
-							<input type="search" placeholder="Поиск по сайту" class="search shadow--inset" />
+				<div class="header__wrap">
+					<div class="header__top">
+						<div class="header__col header__col--wide">
+							<div class="header__row">
+								<a href="index.html" class="header__heading">
+									<h1 class="heading">Ветклиника</h1>
+								</a>
+								<div class="header__search">
+									<input type="search" placeholder="Поиск по сайту" class="search shadow--inset" />
+								</div>
+							</div>
+							<nav class="menu" id="js-top-menu">
+								<a href="about.html" class="menu__item">о ветклинике</a>
+								<a href="service.html" class="menu__item">услуги</a>
+								<a href="price.html" class="menu__item">цены</a>
+								<a href="laboratory.html" class="menu__item">ветлаболатория</a>
+								<a href="articles.html" class="menu__item">статьи</a>
+								<a href="hotel.html" class="menu__item">зоогостиница</a>
+								<a href="contacts.html" class="menu__item">контакты</a>
+							</nav>
+						</div>
+						<div class="header__col header__col--narrow">
+							<a href="tel:+74955005050" class="phone">7 (495)&nbsp;
+								<span>500 50 50</span>
+							</a>
 						</div>
 					</div>
-					<nav class="menu" id="js-top-menu">
-						<a href="about.html" class="menu__item">о ветклинике</a>
-						<a href="service.html" class="menu__item">услуги</a>
-						<a href="price.html" class="menu__item">цены</a>
-						<a href="laboratory.html" class="menu__item">ветлаболатория</a>
-						<a href="articles.html" class="menu__item">статьи</a>
-						<a href="hotel.html" class="menu__item">зоогостиница</a>
-						<a href="contacts.html" class="menu__item">контакты</a>
-					</nav>
-				</div>
-				<div class="header__col header__col--narrow">
-					<a href="tel:+74955005050" class="phone">7 (495)&nbsp;
-						<span>500 50 50</span>
-					</a>
+					<div class="header__bottom">
+						<div class="hero">
+							<div class="container">
+								<div class="hero__slider">
+									<div class="slider">
+										<div class="slider__item">
+											<img src="../assets/images/slide-img1.jpg" alt="" class="slider__image" />
+											<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 собакам</p>
+										</div>
+										<div class="slider__item">
+											<img src="../assets/images/slide-img2.jpg" alt="" class="slider__image" />
+											<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 красным собакам</p>
+										</div>
+										<div class="slider__item">
+											<img src="../assets/images/slide-img3.jpg" alt="" class="slider__image" />
+											<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 жёлтым собакам</p>
+										</div>
+										<div class="slider__item">
+											<img src="../assets/images/slide-img4.jpg" alt="" class="slider__image" />
+											<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 зелёным собакам</p>
+										</div>
+										<div class="slider__item">
+											<img src="../assets/images/slide-img5.jpg" alt="" class="slider__image" />
+											<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 голубым собакам</p>
+										</div>
+									</div>
+								</div>
+								<div class="hero__widget">
+									<a href="#0" class="banner banner--attention shadow">
+										<span class="banner__title">Вызов ветеринара круглосуточно</span>
+										<span class="banner__icon">
+											<svg viewBox="0 0 1 1"><use xlink:href="#icon-fast"></use></svg>
+										</span>
+									</a>
+									<a href="#0" class="banner shadow">
+										<span class="banner__title">Лаболатория ветклиники</span>
+										<span class="banner__icon">
+											<svg viewBox="0 0 1 1"><use xlink:href="#icon-tubes"></use></svg>
+										</span>
+									</a>
+									<a href="#0" class="banner shadow">
+										<span class="banner__title">Зоогостиница</span>
+										<span class="banner__icon">
+											<svg viewBox="0 0 1 1"><use xlink:href="#icon-hotel"></use></svg>
+										</span>
+									</a>
+									<a href="#0" class="banner shadow">
+										<span class="banner__title">Зоотакси</span>
+										<span class="banner__icon">
+											<svg viewBox="0 0 1 1"><use xlink:href="#icon-taxi"></use></svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__filters">
+						<div class="filters">
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-dog"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Собаки </h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-cat"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Кошки</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-bird"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Птицы</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-rat"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Грызуны</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-fish"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Рыбы</h4>
+							</div>
+							<div class="filters__item">
+								<div class="filters__icon">
+									<svg viewBox="0 0 1 1"><use xlink:href="#icon-lizard"></use></svg>
+									<div class="filters__links">
+										<a href="#0" class="title">Услуги</a>
+										<a href="#0" class="title">Цены</a>
+										<a href="#0" class="title">Статьи</a>
+									</div>
+								</div>
+								<h4 class="title filters__title">Рептилии</h4>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
 		<div class="index">
-			<div class="index__group">
-				<div class="hero">
-					<div class="container">
-						<div class="hero__slider">
-							<div class="slider">
-								<div class="slider__item">
-									<img src="../assets/images/slide-img1.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img2.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 красным собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img3.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 жёлтым собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img4.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 зелёным собакам</p>
-								</div>
-								<div class="slider__item">
-									<img src="../assets/images/slide-img5.jpg" alt="" class="slider__image" />
-									<p class="slider__title">За 2015 год мы сохранили жизнь 55 002 голубым собакам</p>
-								</div>
-							</div>
-						</div>
-						<div class="hero__widget">
-							<a href="#0" class="banner banner--attention shadow">
-								<span class="banner__title">Вызов ветеринара круглосуточно</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-fast"></use></svg>
-								</span>
-							</a>
-							<a href="#0" class="banner shadow">
-								<span class="banner__title">Лаболатория ветклиники</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-tubes"></use></svg>
-								</span>
-							</a>
-							<a href="#0" class="banner shadow">
-								<span class="banner__title">Зоогостиница</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-hotel"></use></svg>
-								</span>
-							</a>
-							<a href="#0" class="banner shadow">
-								<span class="banner__title">Зоотакси</span>
-								<span class="banner__icon">
-									<svg viewBox="0 0 1 1"><use xlink:href="#icon-taxi"></use></svg>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="index__group">
-				<div class="container">
-					<div class="filters">
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-dog"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Собаки </h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-cat"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Кошки</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-bird"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Птицы</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-rat"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Грызуны</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-fish"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Рыбы</h4>
-						</div>
-						<div class="filters__item">
-							<div class="filters__icon">
-								<svg viewBox="0 0 1 1"><use xlink:href="#icon-lizard"></use></svg>
-								<div class="filters__links">
-									<a href="#0" class="title">Услуги</a>
-									<a href="#0" class="title">Цены</a>
-									<a href="#0" class="title">Статьи</a>
-								</div>
-							</div>
-							<h4 class="title filters__title">Рептилии</h4>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="index__group">
 				<div class="container">
 					<div class="index__main">
@@ -590,7 +591,7 @@
 						<a href="#0" class="banner banner--sidebar shadow">
 							<span class="banner__title">Ищем хозяев</span>
 							<span class="banner__image">
-								<img src="assets/images/adopt.jpg" alt="adopt" />
+								<img src="assets/images/adopt.jpg" alt="adopt">
 							</span>
 						</a>
 					</div>

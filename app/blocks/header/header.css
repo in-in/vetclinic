@@ -1,16 +1,12 @@
 .header
 {
   display: flex;
+  margin-bottom: 6.938rem; /* 111/16 */
   padding-top: 1.75rem; /* 28/16 */
   background-color: var(--mainBg);
 }
 
-.header--high
-{
-  height: 12rem; /* 192/16 */
-}
-
-.header,
+.header__wrap,
 .header__col
 {
   flex-direction: column;
@@ -43,4 +39,14 @@
 
   padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
+}
+
+.header__bottom
+{
+  margin-bottom: 1.938rem; /* 31/16 */
+}
+
+.header__filters
+{
+  margin-bottom: -4.625rem; /* -74/16 */
 }

@@ -1,6 +1,4 @@
 include ../container/container
-include ../hero/hero
-include ../filters/filters
 include ../contentBlock/contentBlock
 include ../stations/stations
 include ../job/job
@@ -8,11 +6,6 @@ include ../articles/articles
 
 mixin index()
   +b.index
-    .index__group
-      +hero()
-    .index__group
-      +container()
-        +filters(getData('filters'))
     .index__group
       +container()
         .index__main
