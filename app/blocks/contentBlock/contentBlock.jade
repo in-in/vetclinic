@@ -3,8 +3,9 @@ include ../icon/icon
 mixin contentBlock(icon, title)
   +b.contentBlock&attributes(attributes)
     +e.title
-      +e.icon
-        +icon(icon)
+      if icon
+        +e.icon
+          +icon(icon)
       h4.title= title
     .contentBlock__body
       block

@@ -14,14 +14,17 @@
   background-color: var(--innerBg);
 }
 
-.vacancies__link
+.vacancies__item
 {
-  margin-bottom: .5rem; /* 8/16 */
-  text-decoration: underline;
-  color: var(--bannerBg);
+  margin-bottom: .625rem; /* 10/16 */
 }
 
-.vacancies__link:last-child
+.vacancies__item a
+{
+  font-weight: 600;
+}
+
+.vacancies__item:last-child
 {
   margin-bottom: 0;
 }
@@ -36,31 +39,11 @@
   padding-left: 2.875rem; /* 46/16 */
   background-color: var(--innerBg);
   font-size: var(--mediumFontSize);
-  font-weight: 300;
 }
 
-.vacancies__description h3,
-.vacancies__description h4
+.vacancies__description:last-child
 {
-  margin: 0;
-  margin-bottom: .375rem; /* 6/16 */
-  font-size: var(--largeFontSize);
-}
-
-.vacancies__description h3
-{
-  font-weight: 600;
-}
-
-.vacancies__description h4
-{
-  font-weight: 400;
-}
-
-.vacancies__description p
-{
-  font-size: var(--mediumFontSize);
-  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .vacancies__description ul

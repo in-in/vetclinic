@@ -12,7 +12,10 @@
 
 .doctors__card
 {
+  overflow: hidden;
   margin-bottom: .625rem; /* 10/16 */
+  border-top-left-radius: 1.25rem; /* 20/16 */
+  border-bottom-right-radius: 1.25rem; /* 20/16 */
   background-color: var(--innerBg);
 }
 

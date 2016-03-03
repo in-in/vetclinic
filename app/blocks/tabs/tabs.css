@@ -15,22 +15,24 @@
   transition: all .2s ease;
 }
 
-.tabLink__item a:hover
+.tabLink__item a:hover,
+.tabLink__item--active a
 {
   color: var(--activeColor);
 }
 
-.tab-content
+.tabContent
 {
   flex-direction: column;
+  width: 100%;
 }
 
-.tab
+.tabContent__item
 {
   display: none;
 }
 
-.tab.active
+.tabContent__item--active
 {
   display: flex;
 }

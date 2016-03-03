@@ -1,4 +1,5 @@
 include ../blocks/inner/inner
+include ../blocks/tabs/tabs
 
 extends ../blocks/layout-default/layout-default
 
@@ -8,4 +9,4 @@ block head
 
 block content
   +inner()
-    p inner main content
+    +tabsContent()

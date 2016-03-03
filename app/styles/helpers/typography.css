@@ -45,6 +45,21 @@ small,
   font-weight: 600;
 }
 
+.titleLarge
+{
+  text-transform: uppercase;
+  font-size: var(--largeFontSize);
+  font-weight: 600;
+  margin-bottom: 1rem; /* 16/16 */
+}
+
+.subtitle
+{
+  font-size: var(--largeFontSize);
+  font-weight: 600;
+  margin-bottom: .875rem; /* 14/16 */
+}
+
 .text
 {
   font-size: inherit;
@@ -54,16 +69,16 @@ small,
 .light
 {
   color: var(--lightTextColor);
-  font-weight: 300;
   font-size: inherit;
+  font-weight: 300;
 }
 
 .link
 {
-  text-decoration: underline;
   color: var(--accentColor);
   font-size: var(--mediumFontSize);
   font-weight: 300;
+  border-bottom: 1px solid var(--accentColor);
 }
 
 p .link

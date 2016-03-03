@@ -5,35 +5,17 @@
   flex-direction: column;
 }
 
-.license__header
-{
-  margin-bottom: .625rem; /* 10/16 */
-}
-
 .license__list
 {
   padding-top: 3.313rem; /* 53/16 */
+  padding-bottom: 3rem;
   padding-left: 2.875rem; /* 46/16 */
   background-color: var(--innerBg);
-  padding-bottom: 6.25rem; /* 100/16 */
-}
-
-.license__list h4
-{
-  margin: 0;
-  margin-bottom: 4.125rem; /* 66/16 */
-  font-size: var(--largeFontSize);
-  font-weight: 600;
 }
 
 .license__item
 {
   margin-bottom: 3.125rem; /* 50/16 */
-}
-
-.license__item:last-child
-{
-  margin-bottom: 0;
 }
 
 .license__image
@@ -50,10 +32,4 @@
 .license__info span
 {
   margin-bottom: .313rem; /* 5/16 */
-}
-
-.license__info a
-{
-  text-decoration: underline;
-  color: var(--mobileHeaderColor);
 }

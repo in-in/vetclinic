@@ -1,21 +1,23 @@
 mixin vacancies(list)
   +b.vacancies&attributes(attributes)
-    +e.header
-      +infoBlock()
-        +infoTitle() Вакансии
     +e.list
-      +e('a')(href="#0").link Хирург
-      +e('a')(href="#0").link Ветеринар
-      +e('a')(href="#0").link Терапевт
-      +e('a')(href="#0").link Охраник
-      +e('a')(href="#0").link Водитель
+      +e.item
+        a(href="#0").link Хирург
+      +e.item
+        a(href="#0").link Ветеринар
+      +e.item
+        a(href="#0").link Терапевт
+      +e.item
+        a(href="#0").link Охраник
+      +e.item
+        a(href="#0").link Водитель
     each item in list
       +e.description
-        h3= item.title
-        p= item.desc
+        h3.subtitle= item.title
+        p.text= item.desc
         h4 Требования
-        p= item.spec
+        p.text= item.spec
         h4 Условия
         ul
         each value in item.terms
-          li= value
+          li.text= value

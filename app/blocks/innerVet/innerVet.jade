@@ -1,0 +1,7 @@
+include ../contentBlock/contentBlock
+include ../doctors/doctors
+
+mixin innerVet()
+  +b.innerVet&attributes(attributes)
+    +contentBlock(null, 'Hаши ветеринары').--main.--nobg.shadow
+      +doctors(getData('doctors'))

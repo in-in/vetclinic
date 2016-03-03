@@ -1,9 +1,24 @@
-mixin tabsLink(list)
+include ../innerAbout/innerAbout
+include ../innerLab/innerLab
+include ../innerVet/innerVet
+include ../innerJob/innerJob
+include ../innerLicense/innerLicense
+
+mixin tabLink(list)
   +b('ul').tabLink&attributes(attributes)
     each item, index in list
       +e.item
         a(href='#tab#{index}', class='#{item[1]}')= item[0]
 
 mixin tabsContent()
-  .tab-content&attributes(attributes)
-    block
+  +b.tabContent&attributes(attributes)
+    .tabContent__item.tabContent__item--active
+      +innerAbout()
+    .tabContent__item#tab0
+      +innerLab()
+    .tabContent__item#tab1
+      +innerVet()
+    .tabContent__item#tab2
+      +innerJob()
+    .tabContent__item#tab3
+      +innerLicense()

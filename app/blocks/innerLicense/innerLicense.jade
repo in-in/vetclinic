@@ -1,0 +1,7 @@
+include ../contentBlock/contentBlock
+include ../license/license
+
+mixin innerLicense()
+  +b.innerLicense&attributes(attributes)
+    +contentBlock(null, 'Лицензии и сертификаты').--main.shadow
+      +license(getData('license'))
