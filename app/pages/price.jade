@@ -2,16 +2,16 @@ include ../blocks/container/container
 include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
-include ../blocks/serviceList/serviceList
+include ../blocks/priceList/priceList
 
 extends ../blocks/layout-default/layout-default
 
 block head
-  -var selected = 'service'
+  -var selected = 'price'
 
 block content
   +container()
-    +breadcrumbs('Услуги')
+    +breadcrumbs('Цены')
   +inner()
-    +contentBlock(null, 'Виды услуг').--main.--nobg.shadow
-      +serviceList(getData('serviceList'))
+    +contentBlock(null, 'Стоимость ветеринарных услуг для собак').--main.--nobg.shadow
+      +priceList(getData('price'))

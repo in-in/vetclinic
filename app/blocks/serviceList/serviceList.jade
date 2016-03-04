@@ -3,7 +3,8 @@ include ../icon/icon
 mixin serviceList(list)
   +b.serviceList&attributes(attributes)
     each item in list
-      +e.item
-        +icon('arrow', 10, 16).serviceList__icon
+      +e.item.shadow
+        +icon('arrow', 8, 10).serviceList__icon
         +e.title
-          a(href="service-more.html").title= item[0]
+          a(href="service-more.html", lang="ru").title.hyphenate= item[0]
+        

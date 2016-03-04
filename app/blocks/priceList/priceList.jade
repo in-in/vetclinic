@@ -1,14 +1,26 @@
-include ../innerList/innerList
+include ../icon/icon
 
 mixin priceList(items)
-  +b.priceList&attributes(attributes)
-    ul.accordion
-      each item, index in items
-        li.accordion__item
-          input(type="checkbox" name ="level-#{index+1}" id="level-#{index+1}").accordion__input
-          label(for="level-#{index+1}").accordion__label= item.title
-          +innerList()
-            if item.list
-              +innerItems(item.list)
-
-      
+  +b("ul").priceList&attributes(attributes)
+    each item, index in items
+      +e.item
+        input(type="checkbox" name ="level-#{index+1}" id="level-#{index+1}")
+        +e('label')(for="level-#{index+1}").label= item.title
+          +icon('arrow', 8, 10).priceList__icon
+        if item.list
+          +e("ul").innerList
+            +e("li").itemInner.priceList__description
+              +e("span").number #
+              +e("span").title Наименование услуг
+              +e("span").unit Единица измерения
+              +e("span").price Рублей
+            each i in item.list
+              +e("li").itemInner
+                +e("span").number
+                  = i.number
+                +e("span").title
+                  = i.service
+                +e("span").unit
+                  = i.unit
+                +e("span").price
+                  = i.price

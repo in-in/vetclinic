@@ -73,6 +73,11 @@
   background: none;
 }
 
+.contentBlock--nobg:hover.shadow
+{
+  box-shadow: none;
+}
+
 .contentBlock--sidebar .contentBlock__text
 {
   padding-right: 1.25rem; /* 20/16 */
