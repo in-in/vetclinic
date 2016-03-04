@@ -1,15 +1,10 @@
-include ../info/info
-include ../aboutInner/aboutInner
 include ../form/form
 
 mixin contacts()
   +b.contacts&attributes(attributes)
-    +e.header
-      +infoBlock()
-        +infoTitle() Контакты
     +e.list
       +e.item
-        +e('img')(src="images/map-large.jpg", alt="map").map
+        #map
         +e.info
           +e.block
             +e('p').title Адрес ветклиники:
@@ -21,20 +16,20 @@ mixin contacts()
           +e.block
             +e('p').title Ближайшие станци метро:
             +e.wrap
-              +icon('icon-metro', 90, 74).contacts__icon
+              +icon('metro', 90, 74).contacts__icon
               +e('p').text Сухаревская
             +e.wrap
-              +icon('icon-metro', 90, 74).contacts__icon
+              +icon('metro', 90, 74).contacts__icon
               +e('p').text Чистые пруды
             +e.wrap
-              +icon('icon-metro', 90, 74).contacts__icon
+              +icon('metro', 90, 74).contacts__icon
               +e('p').text Тургеневская
           +e.block
             +e('p').title Режим работы:
             +e('p').text ПН / ВТ / СР / ЧТ / ПТ
             +e('p').text с 8:00 до 18:00
       +e.item
-        +e('img')(src="images/map-large.jpg", alt="map").map
+        #map2
         +e.info
           +e.block
             +e('p').title Адрес ветклиники:
@@ -46,13 +41,13 @@ mixin contacts()
           +e.block
             +e('p').title Ближайшие станци метро:
             +e.wrap
-              +icon('icon-metro', 90, 74).contacts__icon
+              +icon('metro', 90, 74).contacts__icon
               +e('p').text Сухаревская
             +e.wrap
-              +icon('icon-metro', 90, 74).contacts__icon
+              +icon('metro', 90, 74).contacts__icon
               +e('p').text Чистые пруды
             +e.wrap
-              +icon('icon-metro', 90, 74).contacts__icon
+              +icon('metro', 90, 74).contacts__icon
               +e('p').text Тургеневская
           +e.block
             +e('p').title Режим работы:

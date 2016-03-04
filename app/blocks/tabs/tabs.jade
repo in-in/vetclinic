@@ -3,6 +3,7 @@ include ../innerLab/innerLab
 include ../innerVet/innerVet
 include ../innerJob/innerJob
 include ../innerLicense/innerLicense
+include ../innerHotel/innerHotel
 
 mixin tabLink(list)
   +b('ul').tabLink&attributes(attributes)
@@ -12,10 +13,18 @@ mixin tabLink(list)
 
 mixin tabsContent()
   +b.tabContent&attributes(attributes)
-    .tabContent__item.tabContent__item--active
-      +innerAbout()
-    .tabContent__item#tab0
-      +innerLab()
+    if (selected === "about")
+      .tabContent__item.tabContent__item--active
+        +innerAbout()
+    if (selected === "hotel")
+      .tabContent__item.tabContent__item--active
+        +innerHotel()
+    if (selected === "laboratory")
+      .tabContent__item#tab0.tabContent__item--active
+        +innerLab()
+    else
+      .tabContent__item#tab0
+        +innerLab()
     .tabContent__item#tab1
       +innerVet()
     .tabContent__item#tab2

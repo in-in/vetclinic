@@ -71,6 +71,7 @@
 .contentBlock--nobg .contentBlock__body
 {
   background: none;
+  overflow: visible;
 }
 
 .contentBlock--nobg:hover.shadow

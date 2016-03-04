@@ -1,0 +1,18 @@
+include ../blocks/container/container
+include ../blocks/breadcrumbs/breadcrumbs
+include ../blocks/inner/inner
+include ../blocks/contentBlock/contentBlock
+include ../blocks/contacts/contacts
+
+extends ../blocks/layout-default/layout-default
+
+block head
+  -var selected = 'contacts'
+
+block content
+  +container()
+    +breadcrumbs('контакты')
+  +inner()
+    +contentBlock(null, 'Контакты').--main.shadow
+      +contacts()
+      

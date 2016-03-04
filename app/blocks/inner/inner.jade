@@ -16,7 +16,7 @@ mixin inner()
           .inner__sidebar
             .inner__group--sidebar
               +banner('Вызов ветеринара круглосуточно', ['fast']).shadow.--attention.--nomargin
-            if (selected === "about")
+            if (selected === "about" || selected === "laboratory" || selected === "hotel")
               .inner__group--sidebar
                 .inner__menu.shadow
                   +tabLink([

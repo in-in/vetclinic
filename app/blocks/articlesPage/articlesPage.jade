@@ -1,21 +1,10 @@
-include ../info/info
-include ../aboutInner/aboutInner
-include ../price/price
-include ../filters/filters
-
 mixin articlesPage(list)
   +b.articlesPage&attributes(attributes)
-    +e.filters
-      +priceHeader().--mobile Стоимость услуг для собак
-      +filtersMobile(getData('filters'))
-    +e.header
-      +infoBlock()
-        +infoTitle() Статьи
     +e.list
       each item in list
-        +e.item
-          +e('img')(src="images/#{item[0]}", alt="article1").image
+        +e.item.shadow
+          +e('img')(src="assets/images/#{item[0]}", alt="article1").image
           +e.info
-            h4= item[1]
-            p= item[2]
-              +e('a')(href="articles-more.html").link читать далее
+            h4.titleLarge= item[1]
+            p.text= item[2]
+              +e('a')(href="articles-more.html").link.link читать далее
