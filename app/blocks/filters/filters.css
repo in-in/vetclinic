@@ -19,6 +19,7 @@
 
 .filters__icon
 {
+  position: relative;
   justify-content: center;
   width: 6.875rem; /* 110/16 */
   height: 6.875rem; /* 110/16 */
@@ -28,7 +29,13 @@
 
 .filters__icon svg
 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 4rem; /* 64/16 */
+  transition: all .4s linear;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
   fill: var(--accentColor);
 }
 
@@ -39,10 +46,12 @@
 
 .filters__links
 {
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all .4s linear;
+  transform: scale(.3);
+  opacity: 0;
 }
 
 .filters__links a
@@ -58,10 +67,12 @@
 
 .filters__item:hover .filters__links
 {
-  display: flex;
+  transform: scale(1);
+  opacity: 1;
 }
 
 .filters__item:hover .filters__icon svg
 {
-  display: none;
+  transform: scale(.3) translate(-150%, -150%);
+  opacity: 0;
 }
