@@ -1038,6 +1038,68 @@ p .link
   fill: #e31c20;
 }
 
+.contacts__form
+{
+  padding-right: 35.008px;
+  padding-right: 2.188rem; /* 35/16 */
+  padding-left: 35.008px;
+  padding-left: 2.188rem; /* 35/16 */
+}
+
+.contacts__col--narrow
+{
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: -webkit-calc(99.99% * 2/5 - 0.375rem);
+  width: calc(99.99% * 2/5 - 0.375rem);
+}
+
+.contacts__col--narrow:nth-child(1n) {
+    margin-right: 10px;
+    margin-right: .625rem;
+}
+
+.contacts__col--narrow:last-child {
+    margin-right: 0;
+}
+
+.contacts__col--narrow:nth-child(5n) {
+    float: right;
+}
+
+.contacts__col--narrow:nth-child(5n) {
+    margin-right: 0;
+}
+
+.contacts__col--wide
+{
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: -webkit-calc(99.99% * 3/5 - 0.25rem);
+  width: calc(99.99% * 3/5 - 0.25rem);
+}
+
+.contacts__col--wide:nth-child(1n) {
+    margin-right: 10px;
+    margin-right: .625rem;
+}
+
+.contacts__col--wide:last-child {
+    margin-right: 0;
+}
+
+.contacts__col--wide:nth-child(5n) {
+    float: right;
+}
+
+.contacts__col--wide:nth-child(5n) {
+    margin-right: 0;
+}
+
 .contacts__intro
 {
   -webkit-box-orient: vertical;
@@ -1046,36 +1108,28 @@ p .link
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-right: 10px;
-  margin-right: .625rem; /* 10/16 */
-  padding-top: 35.008px;
-  padding-top: 2.188rem; /* 35/16 */
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem; /* 20/16 */
-  padding-left: 33.008px;
-  padding-left: 2.063rem; /* 33/16 */
-  padding-right: 33.008px;
-  padding-right: 2.063rem; /* 33/16 */
-  border: 5.008px solid #69b3ff;
-  border: .313rem solid #69b3ff; /* 5/16 */
+  border: 5.008px solid #4ea4e7;
+  border: .313rem solid #4ea4e7; /* 5/16 */
+  -webkit-border-radius: 1.25rem;
+          border-radius: 1.25rem; /* 20/16 */
 }
 
 .contacts__intro p
 {
-  font-weight: 600;
   font-size: 18px;
   font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .contacts__intro p:last-of-type
 {
-  color: #69b3ff;
+  color: #4ea4e7;
 }
 
 .contacts__required
 {
   display: inline-block;
-  color: #69b3ff;
+  color: #4ea4e7;
   font-size: 14px;
   font-size: 0.875rem;
   font-style: italic;
@@ -1086,14 +1140,6 @@ p .link
   content: ' *';
   vertical-align: bottom;
   color: #cb1533;
-}
-
-.contacts__form
-{
-  padding-right: 40px;
-  padding-right: 2.5rem; /* 40/16 */
-  padding-left: 40px;
-  padding-left: 2.5rem; /* 40/16 */
 }
 .container
 {
