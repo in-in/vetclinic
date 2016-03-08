@@ -17,7 +17,7 @@
   appearance: none;
 }
 
-.filters__icon
+.filters__wrap
 {
   position: relative;
   justify-content: center;
@@ -27,7 +27,7 @@
   background-color: #fff;
 }
 
-.filters__icon svg
+.filters__icon
 {
   position: absolute;
   top: 50%;
@@ -39,7 +39,7 @@
   fill: var(--accentColor);
 }
 
-.filters__icon--active svg
+.filters__icon--active
 {
   fill: var(--activeColor);
 }
@@ -71,7 +71,7 @@
   opacity: 1;
 }
 
-.filters__item:hover .filters__icon svg
+.filters__item:hover .filters__icon
 {
   transform: scale(.3) translate(-150%, -150%);
   opacity: 0;

@@ -25,6 +25,13 @@ mixin inner()
                               ['Вакансии', 'title'],
                               ['Лицензии и сертификаты', 'title']
                             ])
+            if (selected === "adopt")
+              .inner__group--sidebar
+                .inner__menu.shadow
+                  +tabLink([
+                              ['Ищут хозяина', 'title'],
+                              ['Нашли семью', 'title']
+                            ])
             .inner__group--sidebar
               +banner('Лаболатория ветклиники', ['tubes']).shadow
               +banner('Зоогостиница', ['hotel']).shadow
@@ -57,4 +64,4 @@ mixin inner()
             .inner__group--sidebar
               +banner('Груминг', ['scissors']).--sidebar.shadow
               +banner('Дрессировка', ['trainer']).--sidebar.shadow
-              +banner('Ищем хозяев', false, 'adopt.jpg').--sidebar.shadow
+              +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--sidebar.shadow

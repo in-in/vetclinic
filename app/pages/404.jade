@@ -2,17 +2,13 @@ include ../blocks/container/container
 include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
-include ../blocks/list/list
+include ../blocks/404/404
 
 extends ../blocks/layout-default/layout-default
 
-block head
-  -var selected = 'articles'
-
 block content
   +container()
-    +breadcrumbs('статьи')
+    +breadcrumbs('Ошибка 404')
   +inner()
-    +contentBlock(null, 'Статьи').--main.--nobg.shadow
-      +list(getData('articles'))
-      
+    +contentBlock(null, 'Ошибка 404').--main.shadow
+      +404()

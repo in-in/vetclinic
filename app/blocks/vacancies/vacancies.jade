@@ -12,7 +12,7 @@ mixin vacancies(list)
       +e.item
         a(href="#0").link Водитель
     each item in list
-      +e.description
+      +e.description.shadow
         h3.subtitle= item.title
         p.text= item.desc
         h4 Требования

@@ -1,0 +1,9 @@
+mixin list(list)
+    +b.list&attributes(attributes)
+        each item, index in list
+          +e.item.shadow
+            +e.IMG(src="assets/images/#{item[0]}", alt="adopt#{index}").image
+            +e.info
+              h4.titleLarge= item[1]
+              p.text= item[2]
+                +e.A(href="adopt-more.html").link.link читать далее

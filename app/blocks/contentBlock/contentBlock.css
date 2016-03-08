@@ -1,6 +1,7 @@
 .contentBlock
 {
   flex-direction: column;
+  align-self: flex-start;
   width: 100%;
   margin-bottom: 1.5rem; /* 24/16 */
   border-top-left-radius: 1.25rem; /* 20/16 */
@@ -46,6 +47,20 @@
   background-color: var(--innerBg);
 }
 
+.contentBlock__top
+{
+  background-color: green;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contentBlock__image img
+{
+  border: 1px solid #000;
+  /*width: 320px;*/
+  max-width: 100%;
+}
+
 .contentBlock__text
 {
   flex-direction: column;
@@ -70,8 +85,8 @@
 
 .contentBlock--nobg .contentBlock__body
 {
-  background: none;
   overflow: visible;
+  background: none;
 }
 
 .contentBlock--nobg:hover.shadow

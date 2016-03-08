@@ -44,6 +44,7 @@
 .vacancies__description:last-child
 {
   margin-bottom: 0;
+  border-bottom-right-radius: 1.25rem; /* 20/16 */
 }
 
 .vacancies__description ul
