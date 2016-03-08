@@ -84,19 +84,15 @@
 {
   flex-direction: column;
   width: 100%;
+  padding: 1.563rem; /* 25/16 */
   border: .313rem solid var(--accentColor); /* 5/16 */
   border-radius: 1.25rem; /* 20/16 */
-}
-
-.contacts__intro p
-{
-  font-size: var(--largeFontSize);
-  font-weight: 600;
 }
 
 .contacts__intro p:last-of-type
 {
   color: var(--accentColor);
+  font-size: var(--largeFontSize);
 }
 
 .contacts__required
@@ -111,5 +107,5 @@
 {
   content: ' *';
   vertical-align: bottom;
-  color: var(--filtersIconColor);
+  color: var(--activeColor);
 }
