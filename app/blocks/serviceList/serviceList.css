@@ -7,7 +7,7 @@
 
 .serviceList__item
 {
-  lost-waffle: 1/3 3 .625rem; /* 10/16 */
+  lost-waffle: 1/3 3 10px;
 
   align-items: center;
   overflow: hidden;

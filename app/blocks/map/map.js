@@ -16,7 +16,7 @@ function init() {
   myPlacemark = new ymaps.Placemark([55.771422, 37.63711], {
     hintContent: 'ВЕТКЛИНИКА'
   });
-  
+
   myMap.geoObjects.add(myPlacemark);
 
   myMap2 = new ymaps.Map('map2', {
@@ -29,7 +29,7 @@ function init() {
     hintContent: 'ВЕТКЛИНИКА'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'assets/images/marker.svg',
+    iconImageHref: 'assets/images/marker3.svg',
     iconImageSize: [22, 32],
     iconImageOffset: [-8, -30]
   });

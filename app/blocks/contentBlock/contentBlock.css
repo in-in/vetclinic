@@ -47,22 +47,19 @@
   background-color: var(--innerBg);
 }
 
-.contentBlock__top
-{
-  /*flex-direction: row;*/
-  /*align-items: center;*/
-}
-
 .contentBlock__top--center
 {
   align-items: center;
 }
 
+.contentBlock__image
+{
+  width: 100%;
+}
+
 .contentBlock__image img
 {
-  /*border: 1px solid #000;*/
-  /*width: 320px;*/
-  /*max-width: 100%;*/
+  max-width: 100%;
 }
 
 .contentBlock__text

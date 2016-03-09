@@ -8,7 +8,9 @@
 
 .priceList ul
 {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .15s ease-out;
 }
 
 .priceList li
@@ -31,7 +33,8 @@
 .priceList input[type=checkbox]:checked + label + ul,
 .priceList input[type=checkbox]:checked + label:nth-of-type(n) + ul
 {
-  display: block;
+  max-height: 30rem;
+  transition: max-height .25s ease-in;
 }
 
 .priceList input[type=checkbox]:checked + label .priceList__icon
@@ -72,11 +75,11 @@
 .priceList__icon
 {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 1.313rem; /* 21/16 */
   display: inline-block;
   width: .5rem; /* 8/16 */
-  margin-top: -.313rem; /* -5/16 */
+  height: 100%;
   transition: all .2s ease;
   fill: var(--mainTextColor);
 }
