@@ -37,6 +37,11 @@
   background-color: transparent;
 }
 
+.stations__input
+{
+  display: none;
+}
+
 .stations__input:checked + .stations__label::before
 {
   background-color: var(--accentColor);

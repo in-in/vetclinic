@@ -1,20 +1,15 @@
-include ../info/info
-include ../aboutInner/aboutInner
 include ../search/search
 
 mixin 404()
   +b.e404&attributes(attributes)
-    +e.header
-      +infoBlock()
-        +infoTitle() ошибка 404
     +e.info
-      +e('img')(src="images/404.jpg", alt="error").image
+      +e.IMG(src="assets/images/404.jpg", alt="error").image
       +e.message
         h4 ой
         span Страница не найдена
     +e.search
       p Страница перенесена в другой раздел. 
       p Пожалуйста, воспользуйтесь поиском:
-      +search().e404__searchField
+      +search().e404__searchField.shadow--inset
       p Или вернитесь на 
-        a(href="index.html").mainLink главную страницу
+        a(href="index.html").link главную страницу

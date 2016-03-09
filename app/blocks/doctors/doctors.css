@@ -19,6 +19,11 @@
   background-color: var(--innerBg);
 }
 
+.doctors__card:first-child
+{
+  margin-top: .625rem; /* 10/16 */
+}
+
 .doctors__card:last-child
 {
   margin-bottom: 0;

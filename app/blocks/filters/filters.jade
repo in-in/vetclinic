@@ -3,11 +3,11 @@ include ../icon/icon
 mixin filters(list)
   +b.filters&attributes(attributes)
     each i in list
-      .filters__item
-        .filters__icon
-          +icon(i.icon)
-          .filters__links
+      +e.item
+        +e.wrap
+          +icon(i.icon).filters__icon
+          +e.links
             a(href="#0").title Услуги
             a(href="#0").title Цены
             a(href="#0").title Статьи
-        h4.title.filters__title= i.title
+        +e.H4.title.title= i.title

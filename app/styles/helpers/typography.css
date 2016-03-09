@@ -47,23 +47,24 @@ small,
 
 .titleLarge
 {
+  margin-bottom: 1rem; /* 16/16 */
   text-transform: uppercase;
   font-size: var(--largeFontSize);
   font-weight: 600;
-  margin-bottom: 1rem; /* 16/16 */
 }
 
 .subtitle
 {
+  margin-bottom: .875rem; /* 14/16 */
   font-size: var(--largeFontSize);
   font-weight: 600;
-  margin-bottom: .875rem; /* 14/16 */
 }
 
 .text
 {
   font-size: inherit;
   font-weight: 300;
+  line-height: 1.4;
 }
 
 .light
@@ -76,9 +77,14 @@ small,
 .link
 {
   color: var(--accentColor);
+  border-bottom: 1px solid var(--accentColor);
   font-size: var(--mediumFontSize);
   font-weight: 300;
-  border-bottom: 1px solid var(--accentColor);
+}
+
+.link--noborder
+{
+  border: none;
 }
 
 p .link

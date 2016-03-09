@@ -1,7 +1,7 @@
 include ../icon/icon
 
-mixin banner(title, icon, img)
-  +b('a')(href="#0").banner&attributes(attributes)
+mixin banner(title, icon, img, link)
+  +b('a')(href="#{link}").banner&attributes(attributes)
     +e.title= title
     if icon
       +e.icon
@@ -10,3 +10,4 @@ mixin banner(title, icon, img)
     if img
       +e.image
         img(src="assets/images/#{img}", alt="adopt")
+          

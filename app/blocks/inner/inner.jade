@@ -15,8 +15,8 @@ mixin inner()
             block
           .inner__sidebar
             .inner__group--sidebar
-              +banner('Вызов ветеринара круглосуточно', ['fast']).shadow.--attention.--nomargin
-            if (selected === "about" || selected === "laboratory" || selected === "hotel")
+              +banner('Вызов ветеринара круглосуточно', ['fast']).--attention.--nomargin.shadow
+            if (selected === "about" || selected === "laboratory" || selected === "hotel" || selected === "search-result")
               .inner__group--sidebar
                 .inner__menu.shadow
                   +tabLink([
@@ -24,6 +24,13 @@ mixin inner()
                               ['Наши ветеринары', 'title'],
                               ['Вакансии', 'title'],
                               ['Лицензии и сертификаты', 'title']
+                            ])
+            if (selected === "adopt" || selected === "adopt-more")
+              .inner__group--sidebar
+                .inner__menu.shadow
+                  +tabLink([
+                              ['Ищут хозяина', 'title'],
+                              ['Нашли семью', 'title']
                             ])
             .inner__group--sidebar
               +banner('Лаболатория ветклиники', ['tubes']).shadow
@@ -57,4 +64,4 @@ mixin inner()
             .inner__group--sidebar
               +banner('Груминг', ['scissors']).--sidebar.shadow
               +banner('Дрессировка', ['trainer']).--sidebar.shadow
-              +banner('Ищем хозяев', false, 'adopt.jpg').--sidebar.shadow
+              +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--sidebar.shadow

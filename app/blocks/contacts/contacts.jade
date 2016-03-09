@@ -4,31 +4,6 @@ mixin contacts()
   +b.contacts&attributes(attributes)
     +e.list
       +e.item
-        #map
-        +e.info
-          +e.block
-            +e('p').title Адрес ветклиники:
-            +e('p').text Россия, Москва, Большая Сухаревская площадь
-            +e('p').text 16 / 18
-          +e.block
-            +e('p').title Телефон:
-            +e('p').text +7 (495) 500 50 50
-          +e.block
-            +e('p').title Ближайшие станци метро:
-            +e.wrap
-              +icon('metro', 90, 74).contacts__icon
-              +e('p').text Сухаревская
-            +e.wrap
-              +icon('metro', 90, 74).contacts__icon
-              +e('p').text Чистые пруды
-            +e.wrap
-              +icon('metro', 90, 74).contacts__icon
-              +e('p').text Тургеневская
-          +e.block
-            +e('p').title Режим работы:
-            +e('p').text ПН / ВТ / СР / ЧТ / ПТ
-            +e('p').text с 8:00 до 18:00
-      +e.item
         #map2
         +e.info
           +e.block
@@ -53,9 +28,36 @@ mixin contacts()
             +e('p').title Режим работы:
             +e('p').text ПН / ВТ / СР / ЧТ / ПТ
             +e('p').text с 8:00 до 18:00
+      +e.item
+        #map3
+        +e.info
+          +e.block
+            +e('p').title Адрес ветклиники:
+            +e('p').text Россия, Москва, Большая Сухаревская площадь
+            +e('p').text 16 / 18
+          +e.block
+            +e('p').title Телефон:
+            +e('p').text +7 (495) 500 50 50
+          +e.block
+            +e('p').title Ближайшие станци метро:
+            +e.wrap
+              +icon('metro', 90, 74).contacts__icon
+              +e('p').text Сухаревская
+            +e.wrap
+              +icon('metro', 90, 74).contacts__icon
+              +e('p').text Чистые пруды
+            +e.wrap
+              +icon('metro', 90, 74).contacts__icon
+              +e('p').text Тургеневская
+          +e.block
+            +e('p').title Режим работы:
+            +e('p').text ПН / ВТ / СР / ЧТ / ПТ
+            +e('p').text с 8:00 до 18:00
       +e.form
-        +e.intro
-          p Вы можете оставить ваши контакты
-          p И мы ответим на ваши вопросы
-          +e('span').required Обязательные поля - отмечены звездочкой
-        +form()
+        +e.col.--narrow
+          +e.intro
+            p.subtitle Вы можете оставить ваши контакты
+            p И мы ответим на ваши вопросы
+            +e('span').required Обязательные поля - отмечены звездочкой
+        +e.col.--wide
+          +form()

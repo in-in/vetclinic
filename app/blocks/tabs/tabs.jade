@@ -1,9 +1,13 @@
+include ../contentBlock/contentBlock
 include ../innerAbout/innerAbout
 include ../innerLab/innerLab
 include ../innerVet/innerVet
 include ../innerJob/innerJob
 include ../innerLicense/innerLicense
 include ../innerHotel/innerHotel
+include ../list/list
+include ../adoptMore/adoptMore
+include ../searchResult/searchResult
 
 mixin tabLink(list)
   +b('ul').tabLink&attributes(attributes)
@@ -13,21 +17,63 @@ mixin tabLink(list)
 
 mixin tabsContent()
   +b.tabContent&attributes(attributes)
-    if (selected === "about")
-      .tabContent__item.tabContent__item--active
-        +innerAbout()
-    if (selected === "hotel")
-      .tabContent__item.tabContent__item--active
-        +innerHotel()
-    if (selected === "laboratory")
-      .tabContent__item#tab0.tabContent__item--active
-        +innerLab()
-    else
-      .tabContent__item#tab0
-        +innerLab()
-    .tabContent__item#tab1
-      +innerVet()
-    .tabContent__item#tab2
-      +innerJob()
-    .tabContent__item#tab3
-      +innerLicense()
+    case selected
+      when "about"
+        .tabContent__item.tabContent__item--active
+          +innerAbout()
+        .tabContent__item#tab0
+          +innerLab()
+        .tabContent__item#tab1
+          +innerVet()
+        .tabContent__item#tab2
+          +innerJob()
+        .tabContent__item#tab3
+          +innerLicense()
+      when "hotel"
+        .tabContent__item.tabContent__item--active
+          +innerHotel()
+        .tabContent__item#tab0
+          +innerLab()
+        .tabContent__item#tab1
+          +innerVet()
+        .tabContent__item#tab2
+          +innerJob()
+        .tabContent__item#tab3
+          +innerLicense()
+      when "laboratory"
+        .tabContent__item#tab0.tabContent__item--active
+          +innerLab()
+        .tabContent__item#tab1
+          +innerVet()
+        .tabContent__item#tab2
+          +innerJob()
+        .tabContent__item#tab3
+          +innerLicense()
+      when "search-result"
+        .tabContent__item.tabContent__item--active
+          +searchResult()
+        .tabContent__item#tab0
+          +innerLab()
+        .tabContent__item#tab1
+          +innerVet()
+        .tabContent__item#tab2
+          +innerJob()
+        .tabContent__item#tab3
+          +innerLicense()
+      when "adopt"
+        .tabContent__item#tab0.tabContent__item--active
+          +contentBlock(null, 'Ищут хозяина').--main.--nobg.shadow
+            +list(getData('adopt'))
+        .tabContent__item#tab1
+          +contentBlock(null, 'Нашли семью').--main.--nobg.shadow
+            +list(getData('adopt'))
+      when "adopt-more"
+        .tabContent__item.tabContent__item--active
+          +contentBlock(null, 'Персидская кошка - марфуша').--main.shadow
+            +adoptMore()
+        .tabContent__item#tab0
+          +contentBlock(null, 'Ищут хозяина').--main.--nobg.shadow
+            +list(getData('adopt'))
+        .tabContent__item#tab1
+          +contentBlock(null, 'Нашли семью').--main.--nobg.shadow
+            +list(getData('adopt'))

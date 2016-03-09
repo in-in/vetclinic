@@ -2,7 +2,7 @@ include ../blocks/container/container
 include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
-include ../blocks/articlesPage/articlesPage
+include ../blocks/list/list
 
 extends ../blocks/layout-default/layout-default
 
@@ -14,5 +14,5 @@ block content
     +breadcrumbs('статьи')
   +inner()
     +contentBlock(null, 'Статьи').--main.--nobg.shadow
-      +articlesPage(getData('articles'))
+      +list(getData('articles'))
       

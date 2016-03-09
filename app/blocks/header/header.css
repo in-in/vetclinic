@@ -13,13 +13,6 @@
   width: 100%;
 }
 
-.header__row
-{
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: .125rem; /* 2/16 */
-}
-
 .header__col--wide
 {
   lost-column: 6/8;
@@ -30,14 +23,20 @@
   lost-column: 2/8;
 
   align-items: center;
-  padding-top: 2.188rem; /* 35/16 */
+  padding-top: 2.625rem; /* 42/16 */
+}
+
+.header__row
+{
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .688rem; /* 11/16 */
 }
 
 .header__search
 {
   lost-column: 2/6;
 
-  padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
 }
 

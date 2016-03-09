@@ -1,10 +1,7 @@
 include ../container/container
 include ../phone/phone
 include ../menu/menu
-include ../map/map
 
-include ../address/address
-include ../info/info
 include ../up/up
 
 mixin footer()
@@ -20,7 +17,7 @@ mixin footer()
               .footer__inner
                 +menu(getData('menu')).--footer
             .footer__col.footer__col--wide
-              +map()
+              #map
             .footer__col.footer__col--narrow
               .footer__inner
                 .footer__address

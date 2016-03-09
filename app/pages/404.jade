@@ -1,0 +1,14 @@
+include ../blocks/container/container
+include ../blocks/breadcrumbs/breadcrumbs
+include ../blocks/inner/inner
+include ../blocks/contentBlock/contentBlock
+include ../blocks/404/404
+
+extends ../blocks/layout-default/layout-default
+
+block content
+  +container()
+    +breadcrumbs('Ошибка 404')
+  +inner()
+    +contentBlock(null, 'Ошибка 404').--main.shadow
+      +404()
