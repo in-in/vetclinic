@@ -24,19 +24,5 @@
   text-decoration: underline;
   font-size: var(--mediumFontSize);
   font-weight: 300;
-}
-
-.searchResult__subtitle
-{
-  margin: 0;
-  margin-bottom: 1.563rem; /* 25/16 */
-  font-size: var(--largeFontSize);
-}
-
-.searchResult__pager
-{
-  justify-content: center;
-  padding-top: 2.5rem;
-  padding-bottom: 1.25rem; /* 20/16 */
-  background-color: var(--innerBg);
+  line-height: 1.5;
 }

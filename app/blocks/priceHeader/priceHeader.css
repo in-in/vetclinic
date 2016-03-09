@@ -40,7 +40,7 @@
   font-size: var(--mediumFontSize);
 }
 
-@media (--mx)
+/*@media (--mx)
 {
   .priceHeader--mobile
   {
@@ -51,4 +51,4 @@
   {
     display: none;
   }
-}
+}*/

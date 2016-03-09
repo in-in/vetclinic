@@ -28,7 +28,7 @@
   align-self: flex-start;
 }
 
-@media (--mx)
+/*@media (--mx)
 {
   .footer__contact
   {
@@ -49,4 +49,4 @@
   {
     display: none;
   }
-}
+}*/

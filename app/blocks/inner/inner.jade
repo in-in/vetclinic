@@ -5,6 +5,7 @@ include ../tabs/tabs
 include ../contentBlock/contentBlock
 include ../stations/stations
 include ../job/job
+include ../serviceList/serviceList
 
 mixin inner()
   +b.inner&attributes(attributes)
@@ -16,6 +17,11 @@ mixin inner()
           .inner__sidebar
             .inner__group--sidebar
               +banner('Вызов ветеринара круглосуточно', ['fast']).--attention.--nomargin.shadow
+            if (selected === "service-more")
+              .inner__group--sidebar
+                +contentBlock(null, 'Bиды услуг').--sidebar.shadow
+                  .contentBlock__text
+                    +serviceList(getData('serviceList')).--sidebar
             if (selected === "about" || selected === "laboratory" || selected === "hotel" || selected === "search-result")
               .inner__group--sidebar
                 .inner__menu.shadow

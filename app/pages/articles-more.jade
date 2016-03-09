@@ -1,0 +1,18 @@
+include ../blocks/container/container
+include ../blocks/breadcrumbs/breadcrumbs
+include ../blocks/inner/inner
+include ../blocks/contentBlock/contentBlock
+include ../blocks/articlesMore/articlesMore
+
+extends ../blocks/layout-default/layout-default
+
+block head
+  -var selected = 'articles-more'
+
+block content
+  +container()
+    +breadcrumbs('статьи')
+  +inner()
+    +contentBlock(null, 'Статьи').--main.shadow
+      +articlesMore()
+      

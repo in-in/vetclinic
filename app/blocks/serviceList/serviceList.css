@@ -50,8 +50,13 @@
   margin-bottom: .625rem; /* 10/16 */
   padding-right: .313rem; /* 5/16 */
   padding-left: 0;
-  padding-left: 21px;
+  padding-left: 1.313rem; /* 21/16 */
+  border: none;
   background: none;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .serviceList--sidebar .serviceList__title
@@ -60,12 +65,18 @@
   list-style-type: disc;
 }
 
-.serviceList--sidebar .serviceList__title:hover
+.serviceList--sidebar .serviceList__title a
 {
-  text-decoration: underline;
+  transition: all .2s;
 }
 
-@media (--mx)
+.serviceList--sidebar .serviceList__title a:hover
+{
+  text-decoration: underline;
+  color: var(--accentColor);
+}
+
+/*@media (--mx)
 {
   .serviceList
   {
@@ -77,8 +88,8 @@
     lost-waffle: 1/1 0 0;
 
     width: 100%;
-    height: 3.063rem; /* 49/16 */
-    padding-left: .938rem; /* 15/16 */
+    height: 3.063rem;
+    padding-left: .938rem;
   }
 
   .serviceList__item:nth-child(odd)
@@ -95,6 +106,6 @@
   {
     min-width: .5rem;
     max-width: .5rem;
-    margin-right: 1.438rem; /* 23/16 */
+    margin-right: 1.438rem;
   }
-}
+}*/

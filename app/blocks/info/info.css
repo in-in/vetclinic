@@ -93,7 +93,7 @@
   flex-direction: column;
 }
 
-@media (--mx)
+/*@media (--mx)
 {
   .infoBlock__inner
   {
@@ -102,16 +102,16 @@
 
   .infoBlock__header
   {
-    height: 1.563rem; /* 25/16 */
-    padding-left: .563rem; /* 9/16 */
+    height: 1.563rem;
+    padding-left: .563rem;
   }
 
   .infoBlock__title
   {
-    padding-left: .688rem; /* 11/16 */
-    font-size: .688rem; /* 11/16 */
+    padding-left: .688rem;
+    font-size: .688rem;
     font-weight: 300;
-    line-height: 1.563rem; /* 25/16 */
+    line-height: 1.563rem;
   }
 
   .infoBlock__header--about
@@ -156,4 +156,4 @@
   {
     display: flex;
   }
-}
+}*/

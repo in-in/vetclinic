@@ -3,8 +3,3 @@
   flex-direction: column;
   width: 100%;
 }
-
-.serviceMore__info
-{
-  background-color: var(--innerBg);
-}

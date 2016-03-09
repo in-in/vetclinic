@@ -5,3 +5,11 @@
   font-size: 1.875rem; /* 30/16 */
   font-weight: 700;
 }
+
+@media (--s)
+{
+  .heading
+  {
+    font-size: var(--smallFontSize);
+  }
+}

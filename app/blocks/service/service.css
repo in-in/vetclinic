@@ -49,10 +49,10 @@
   fill: #fff;
 }
 
-@media (--mx)
+/*@media (--mx)
 {
   .service
   {
     display: flex;
   }
-}
+}*/

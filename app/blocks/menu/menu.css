@@ -66,3 +66,11 @@
   color: var(--accentColor);
   background: none;
 }
+
+@media (--s)
+{
+  .menu
+  {
+    display: none;
+  }
+}

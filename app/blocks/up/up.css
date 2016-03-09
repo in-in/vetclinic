@@ -31,10 +31,10 @@
   border-left: 17px solid transparent;
 }
 
-@media (--mx)
+/*@media (--mx)
 {
   .up
   {
     display: block;
   }
-}
+}*/

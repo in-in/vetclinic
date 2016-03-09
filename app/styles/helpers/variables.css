@@ -25,8 +25,4 @@
   --inputLightColor: #a5a5a5;
 }
 
-@custom-media --xs (width < 20em);
-@custom-media --s (width < 30em);
-@custom-media --m (width < 40em);
-@custom-media --mx (width < 56.25em);
-@custom-media --l (width < 60em);
+@custom-media --s (width < 56.25em);

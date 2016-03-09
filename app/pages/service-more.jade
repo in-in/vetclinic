@@ -1,0 +1,16 @@
+include ../blocks/container/container
+include ../blocks/breadcrumbs/breadcrumbs
+include ../blocks/inner/inner
+include ../blocks/contentBlock/contentBlock
+include ../blocks/serviceMore/serviceMore
+
+extends ../blocks/layout-default/layout-default
+
+block head
+  -var selected = 'service-more'
+
+block content
+  +container()
+    +breadcrumbs('Терапия')
+  +inner()
+      +serviceMore()
