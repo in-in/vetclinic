@@ -14,15 +14,16 @@ mixin header()
       .header__wrap
         .header__top
           .header__col.header__col--wide
-            .header__row
+            .header__menuTrigger
               +ham()
+            .header__row
               a(href="index.html").header__heading
-                +heading() Ветклиника
+                +heading().--mobile Ветклиника
               +phone().--mobile 7 (495)&nbsp;
                   span 500 50 50
               .header__search
                 +search().shadow--inset
-            +menu(getData('menu')).--mobile
+            +menu(getData('menu'))
           .header__col.header__col--narrow
             +phone() 7 (495)&nbsp;
                 span 500 50 50

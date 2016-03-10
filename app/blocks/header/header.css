@@ -1,10 +1,10 @@
 .header
 {
+  position: relative;
   display: flex;
   margin-bottom: 6.938rem; /* 111/16 */
   padding-top: 1.75rem; /* 28/16 */
   background-color: var(--mainBg);
-  position: relative;
 }
 
 .header__wrap,
@@ -56,6 +56,7 @@
   .header
   {
     height: 3.25rem; /* 52/16 */
+    margin-bottom: 0;
     padding-top: 0;
     border-bottom-right-radius: 1.25rem; /* 20/16 */
     border-bottom-left-radius: 1.25rem; /* 20/16 */
@@ -65,8 +66,9 @@
 
   .header__row
   {
-    margin-bottom: 0;
     align-items: center;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .header__bottom,
@@ -80,5 +82,8 @@
   .header__col--wide
   {
     lost-column: 8/8 0 0;
+
+    flex-direction: row;
+    align-items: center;
   }
 }

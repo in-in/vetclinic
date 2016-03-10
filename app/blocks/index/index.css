@@ -28,3 +28,53 @@
   padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
 }
+
+.index__mobile
+{
+  display: none;
+}
+
+@media (--s)
+{
+  .index__main,
+  .index__sidebar
+  {
+    display: none;
+  }
+
+  .index__mobile
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .index__first
+  {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 3.25rem); /* 52/16 */
+    padding-bottom: 3.75rem; /* 60/16 */
+  }
+
+  .index__heading
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .index__btn
+  {
+    width: 100%;
+  }
+
+  .index__filters
+  {
+    background-color: pink;
+  }
+}

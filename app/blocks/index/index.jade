@@ -3,11 +3,22 @@ include ../contentBlock/contentBlock
 include ../stations/stations
 include ../job/job
 include ../articles/articles
+include ../heading/heading
+include ../banner/banner
+include ../filters/filters
 
 mixin index()
   +b.index
     .index__group
       +container()
+        .index__mobile
+          .index__first
+            .index__heading
+              +heading() Ветклиника
+            .index__btn
+              +banner('Вызов ветеринара', ['fast']).--attention.--nomargin.--mobile.shadow.--outset
+          .index__filters
+            +filters(getData('filters')).--mobile
         .index__main
           +contentBlock('hospital', 'О ветклинике').--main.shadow
             .contentBlock__top

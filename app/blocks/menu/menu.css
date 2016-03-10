@@ -58,8 +58,7 @@
   {
     position: absolute;
     z-index: 10;
-    /*top: 2.188rem;*/
-    top: 60px;
+    top: 37px;
     left: 0;
     display: flex;
     flex-direction: column;

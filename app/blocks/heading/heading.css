@@ -8,7 +8,7 @@
 
 @media (--s)
 {
-  .heading
+  .heading--mobile
   {
     font-size: var(--smallFontSize);
   }

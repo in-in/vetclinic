@@ -76,3 +76,16 @@
   transform: scale(.3) translate(-150%, -150%);
   opacity: 0;
 }
+
+.filters--mobile
+{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.filters--mobile .filters__item
+{
+  lost-column: 1/2 2 0;
+
+  background-color: tan;
+}
