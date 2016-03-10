@@ -1,0 +1,97 @@
+.ham
+{
+  display: none;
+  overflow: visible;
+  margin: 0;
+  padding-left: .625rem; /* 10/16 */
+  padding-right: 1.438rem; /* 23/16 */
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity, filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  font: inherit;
+}
+
+.ham:hover
+{
+  opacity: .7;
+}
+
+.ham-box
+{
+  position: relative;
+  display: inline-block;
+  width: 2rem; /* 32/16 */
+  height: 1.375rem; /* 22/16 */
+}
+
+.ham-inner
+{
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+}
+
+.ham-inner,
+.ham-inner::before,
+.ham-inner::after
+{
+  position: absolute;
+  width: 2rem; /* 32/16 */
+  height: .25rem; /* 4/16 */
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 0;
+  background-color: #000;
+}
+
+.ham-inner::before,
+.ham-inner::after
+{
+  display: block;
+  content: '';
+}
+
+.ham-inner::before
+{
+  top: -9px;
+}
+
+.ham-inner::after
+{
+  bottom: -9px;
+}
+
+.ham.is-active .ham-inner
+{
+  transition-delay: .14s;
+  transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  transform: rotate(45deg);
+}
+
+.ham.is-active .ham-inner::before
+{
+  top: 0;
+  transition: top .1s ease, opacity .1s .14s ease;
+  opacity: 0;
+}
+
+.ham.is-active .ham-inner::after
+{
+  bottom: 0;
+  transition: bottom .1s ease, transform .1s .14s cubic-bezier(.215, .61, .355, 1);
+  transform: rotate(-90deg);
+}
+
+@media (--s)
+{
+  .ham
+  {
+    display: flex;
+  }
+}

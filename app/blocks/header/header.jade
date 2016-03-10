@@ -6,6 +6,7 @@ include ../heading/heading
 include ../hero/hero
 include ../filters/filters
 include ../menu-mobile/menu-mobile
+include ../ham/ham
 
 mixin header()
   +b('header').header&attributes(attributes)
@@ -14,12 +15,14 @@ mixin header()
         .header__top
           .header__col.header__col--wide
             .header__row
-              +menu-mobile()
+              +ham()
               a(href="index.html").header__heading
                 +heading() Ветклиника
+              +phone().--mobile 7 (495)&nbsp;
+                  span 500 50 50
               .header__search
                 +search().shadow--inset
-            +menu(getData('menu'))#js-top-menu
+            +menu(getData('menu')).--mobile
           .header__col.header__col--narrow
             +phone() 7 (495)&nbsp;
                 span 500 50 50

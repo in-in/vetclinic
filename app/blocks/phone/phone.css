@@ -8,3 +8,15 @@
 {
   color: var(--activeColor);
 }
+
+.phone--mobile
+{
+  margin-right: .625rem; /* 10/16 */
+  font-size: var(--smallFontSize);
+}
+
+.phone--mobile span
+{
+  color: var(--mainTextColor);
+  font-size: var(--smallFontSize);
+}

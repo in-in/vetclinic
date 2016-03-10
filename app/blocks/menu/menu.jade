@@ -1,7 +1,7 @@
 mixin menu(menu)
-  +b('nav').menu&attributes(attributes)
+  +b.NAV.menu&attributes(attributes)
     each item in menu
       if (selected == item.link)
-        +e('a')(href='#{item.link}.html').item.--active= item.title
+        +e.A(href='#{item.link}.html').item.--active= item.title
       else
-        +e('a')(href='#{item.link}.html').item= item.title
+        +e.A(href='#{item.link}.html').item= item.title
