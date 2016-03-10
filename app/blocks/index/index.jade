@@ -19,6 +19,17 @@ mixin index()
               +banner('Вызов ветеринара', ['fast']).--attention.--nomargin.--mobile.shadow.--outset
           .index__filters
             +filters(getData('filters')).--mobile
+          .index__content
+            +contentBlock(null, 'О ветклинике').--main.--mobile
+              .contentBlock__top
+                .contentBlock__image
+                  img(src="assets/images/about.jpg", alt="about")
+                .contentBlock__text
+                  p.text
+                    span.bold ВЕТКЛИНИКА
+                    |  - один из ведущих и наиболее современный центр по оказанию помощи животным.
+                  p.text Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи, стоматологи, кардиологи и многие другие. Осуществляется помощь даже экзотическим животным. Оборудование кабинетов и
+                    a(href="#0").link читать далее...
         .index__main
           +contentBlock('hospital', 'О ветклинике').--main.shadow
             .contentBlock__top

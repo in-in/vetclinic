@@ -105,3 +105,11 @@
 {
   flex-direction: row;
 }
+
+/* mobile */
+
+.contentBlock--mobile .contentBlock__title
+{
+  justify-content: center;
+  text-transform: uppercase;
+}
