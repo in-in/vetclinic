@@ -25,7 +25,6 @@
 {
   lost-column: 2/8;
 
-  padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
 }
 
@@ -71,5 +70,26 @@
   .index__btn
   {
     width: 100%;
+  }
+
+  .index__filters
+  {
+    margin-bottom: 2.813rem; /* 45/16 */
+  }
+
+  .index__content
+  {
+    width: 100%;
+  }
+
+  .index__content:not(:last-child)
+  {
+    margin-bottom: 2.813rem; /* 45/16 */
+  }
+
+  .index__content--banners
+  {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

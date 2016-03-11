@@ -26,3 +26,5 @@
 }
 
 @custom-media --s (width < 56.25em);
+@custom-media --m (width >= 30em);
+@custom-media --l (width >= 39.625em);

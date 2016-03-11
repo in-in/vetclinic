@@ -113,3 +113,17 @@
   justify-content: center;
   text-transform: uppercase;
 }
+
+.contentBlock--mobile .contentBlock__image--mobile img
+{
+  width: 100%;
+  min-height: 15.25rem; /* 244/16 */
+  height: 100%;
+
+}
+
+.contentBlock--mobile .contentBlock__text
+{
+  padding-right: .938rem; /* 15/16 */
+  padding-left: .938rem; /* 15/16 */
+}

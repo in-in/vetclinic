@@ -21,15 +21,44 @@ mixin index()
             +filters(getData('filters')).--mobile
           .index__content
             +contentBlock(null, 'О ветклинике').--main.--mobile
-              .contentBlock__top
-                .contentBlock__image
-                  img(src="assets/images/about.jpg", alt="about")
-                .contentBlock__text
-                  p.text
-                    span.bold ВЕТКЛИНИКА
-                    |  - один из ведущих и наиболее современный центр по оказанию помощи животным.
-                  p.text Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи, стоматологи, кардиологи и многие другие. Осуществляется помощь даже экзотическим животным. Оборудование кабинетов и
-                    a(href="#0").link читать далее...
+              .contentBlock__image.contentBlock__image--mobile
+                img(src="assets/images/about-mobile.jpg", alt="about")
+              .contentBlock__text
+                p.text
+                  span.bold ВЕТКЛИНИКА
+                  |  - один из ведущих и наиболее современный центр по оказанию помощи животным.
+                p.text Приём осуществляют высококвалифицированные специалисты различных специальностей: терапевты, хирурги, анестезиологи, стоматологи, кардиологи и многие другие. Осуществляется помощь даже экзотическим животным. Оборудование кабинетов и
+                  a(href="#0").link читать далее...
+          .index__content
+            +contentBlock(null, 'Вакансии').--main.--mobile
+              .contentBlock__text
+                +job([
+                    {
+                      "title": "Хирург",
+                      "desc": "Опыт работы: от 5 лет"
+                    },
+                    {
+                      "title": "Стоматолог",
+                      "desc": "Опыт работы: от 3 лет"
+                    },
+                    {
+                      "title": "Хирург",
+                      "desc": "Опыт работы: от 5 лет"
+                    },
+                    {
+                      "title": "Стоматолог",
+                      "desc": "Опыт работы: от 3 лет"
+                    }
+                  ])
+          .index__content.index__content--banners
+            +banner('Лаболатория', ['tubes']).--round.--second.shadow--outset
+            +banner('Зоогостиница', ['hotel']).--round.shadow--outset
+            +banner('Груминг', ['scissors']).--round.shadow--outset
+            +banner('Дрессировка', ['trainer']).--round.--second.shadow--outset
+            +banner('Зоотакси', ['taxi']).--round.--second.shadow--outset
+            +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--round.shadow--outset
+          .index__content
+            p foo
         .index__main
           +contentBlock('hospital', 'О ветклинике').--main.shadow
             .contentBlock__top

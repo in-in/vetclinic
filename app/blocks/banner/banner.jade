@@ -1,7 +1,7 @@
 include ../icon/icon
 
 mixin banner(title, icon, img, link)
-  +b('a')(href="#{link}").banner&attributes(attributes)
+  +b.A(href="#{link}").banner&attributes(attributes)
     +e.title= title
     if icon
       +e.icon
