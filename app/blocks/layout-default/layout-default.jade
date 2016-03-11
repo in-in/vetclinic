@@ -12,10 +12,10 @@ doctype html
 html(lang='ru')
   include ../head/head
   include ../icon/icon-sprite
-  +page
-    +header
+  +page()
+    +header()
     block content
-    +footer
+    +footer()
 
     script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
     +scripts(['app.min.js'])

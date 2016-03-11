@@ -1,12 +1,30 @@
 include ../container/container
 include ../phone/phone
 include ../menu/menu
+include ../contentBlock/contentBlock
 
 include ../up/up
 
 mixin footer()
-  +b('footer').footer
+  +b.FOOTER.footer&attributes(attributes)
       +container()
+        .footer--mobile
+          +contentBlock(null, 'Kонтакты').--main.--mobile.--footer
+            .contentBlock__text.contentBlock__text--center
+              +phone().--center 7 (495)&nbsp;
+                  span 500 50 50
+              p.subtitle Адрес ветклиники:
+              .contentBlock__address
+                p Россия, Москва, Большая
+                p Сухаревская площадь
+                p 16 / 18
+              
+              .contentBlock__address
+                p Россия, Москва, Большая
+                p Сухаревская площадь
+                p 13 / 1
+              span.footer__copy © 2016 Госветклиника
+              
         .footer__wrap
           .footer__header
             h4.footer__title Ветклиника

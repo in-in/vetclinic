@@ -14,6 +14,12 @@
   display: none;
 }
 
+.phone--center
+{
+  justify-content: center;
+  margin-bottom: 1.875rem; /* 30/16 */
+}
+
 @media (--s)
 {
   .phone--mobile

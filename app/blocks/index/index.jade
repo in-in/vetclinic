@@ -58,7 +58,19 @@ mixin index()
             +banner('Зоотакси', ['taxi']).--round.--second.shadow--outset
             +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--round.shadow--outset
           .index__content
-            p foo
+            +contentBlock(null, 'Статьи').--main.--mobile
+              +articlesMobile([
+              {
+                "title": 'Профилактика ушных заболеваний у собак',
+                "img": "articles-mobile1.png",
+                "date": "12.12.2015"
+              },
+              {
+                "title": 'Как правильно кормить персидских котов',
+                "img": "articles-mobile2.png",
+                "date": "12.12.2015"
+              }
+            ]).--mobile
         .index__main
           +contentBlock('hospital', 'О ветклинике').--main.shadow
             .contentBlock__top

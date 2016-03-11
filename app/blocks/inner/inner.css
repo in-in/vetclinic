@@ -19,7 +19,6 @@
   lost-column: 2/8;
 
   flex-direction: column;
-  padding-right: .625rem; /* 10/16 */
   padding-left: .625rem; /* 10/16 */
 }
 
@@ -37,11 +36,11 @@
 .inner__menu
 {
   width: 100%;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 30px;
   border-top-left-radius: 1.25rem; /* 20/16 */
   border-bottom-right-radius: 1.25rem; /* 20/16 */
   background-color: var(--mainBg);
-  padding-left: 30px;
-  padding-right: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }

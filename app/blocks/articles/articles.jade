@@ -1,8 +1,19 @@
 mixin articles(list)
-  +b('section').articles
-    +e('h4').title.title
+  +b.articles
+    +e.H4.title.title
       block
-    +e('ul').list
+    +e.UL.list
       each item in list
         +e.item
           a(href="#0")= item.name
+
+mixin articlesMobile(list)
+  +b.articles&attributes(attributes)
+    each item in list
+      +e.item
+        +e.image
+          +e.IMG(src="assets/images/#{item.img}", alt="article")
+        +e.H4.title.title= item.title
+        +e.info
+          +e.SPAN.date.title= item.date
+          a(href="#0").button.button--low Подробнее
