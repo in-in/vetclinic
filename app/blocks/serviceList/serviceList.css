@@ -76,7 +76,7 @@
   color: var(--accentColor);
 }
 
-/*@media (--mx)
+@media (--s)
 {
   .serviceList
   {
@@ -90,16 +90,22 @@
     width: 100%;
     height: 3.063rem;
     padding-left: .938rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .serviceList__item.shadow:hover {
+    box-shadow: none;
   }
 
   .serviceList__item:nth-child(odd)
   {
-    background-color: #f1f1f1;
+    background-color: var(--innerBg);
   }
 
   .serviceList__item:nth-child(even)
   {
-    background-color: #fdfdfd;
+    background-color: #fff;
   }
 
   .serviceList__icon
@@ -108,4 +114,4 @@
     max-width: .5rem;
     margin-right: 1.438rem;
   }
-}*/
+}

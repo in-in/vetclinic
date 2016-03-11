@@ -3,6 +3,7 @@ include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
 include ../blocks/serviceList/serviceList
+include ../blocks/filters/filters
 
 extends ../blocks/layout-default/layout-default
 
@@ -13,5 +14,6 @@ block content
   +container()
     +breadcrumbs('Услуги')
   +inner()
+    +filters(getData('filters')).--mobile
     +contentBlock(null, 'Виды услуг').--main.--nobg.shadow
       +serviceList(getData('serviceList'))
