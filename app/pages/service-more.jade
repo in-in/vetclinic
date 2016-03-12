@@ -3,6 +3,8 @@ include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
 include ../blocks/serviceMore/serviceMore
+include ../blocks/filters/filters
+include ../blocks/mobileTitle/mobileTitle
 
 extends ../blocks/layout-default/layout-default
 
@@ -10,7 +12,9 @@ block head
   -var selected = 'service-more'
 
 block content
+  +mobileTitle() Рептилии
   +container()
     +breadcrumbs('Терапия')
+    +filters(getData('filters')).--inner
   +inner()
       +serviceMore()

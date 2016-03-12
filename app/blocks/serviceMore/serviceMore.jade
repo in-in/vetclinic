@@ -3,8 +3,10 @@ include ../figure/figure
 
 mixin serviceMore()
   +b.serviceMore&attributes(attributes)
-    +contentBlock(null, 'Терапия').--main.shadow
+    +contentBlock('back', 'Терапия').--main.--right.shadow
       .contentBlock__top
+        .contentBlock__heading
+          h2 Терапия
         .contentBlock__image
           +figure("about-page.jpg", "“Наша ветклиника стабильно работает с 2000 годов”")
         .contentBlock__text
