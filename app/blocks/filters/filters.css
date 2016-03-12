@@ -17,6 +17,11 @@
   appearance: none;
 }
 
+.filters__item--active .filters__icon
+{
+  fill: var(--activeColor);
+}
+
 .filters__wrap
 {
   position: relative;
@@ -37,11 +42,6 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   fill: var(--accentColor);
-}
-
-.filters__icon--active
-{
-  fill: var(--activeColor);
 }
 
 .filters__links
@@ -79,10 +79,11 @@
 
 /* mobile */
 
-.filters--mobile
+.filters.filters--mobile
 {
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 0;
   padding-right: 0;
   padding-left: 0;
 }
@@ -110,7 +111,9 @@
 
 .filters--mobile .filters__icon
 {
+  width: 4rem; /* 64/16 */
   margin-top: -.313rem; /* -5/16 */
+  fill: var(--accentColor);
 }
 
 .filters--mobile .filters__title
@@ -118,10 +121,16 @@
   position: absolute;
   bottom: 1.25rem; /* 20/16 */
   left: 50%;
+  display: block;
   transition: all .4s linear;
   transform: translateX(-50%);
   color: var(--accentColor);
   font-size: var(--smallFontSize);
+}
+
+.filters--mobile .filters__links
+{
+  display: flex;
 }
 
 .filters--mobile .filters__links a
@@ -129,6 +138,12 @@
   color: #fff;
   font-size: var(--smallFontSize);
   line-height: 2.5;
+}
+
+.filters--mobile .filters__item:hover .filters__icon
+{
+  transform: scale(.3) translate(-150%, -150%);
+  opacity: 0;
 }
 
 .filters--mobile .filters__item:hover .filters__wrap
@@ -140,6 +155,66 @@
 {
   transform: scale(.3) translate(-150%, -150%);
   opacity: 0;
+}
+
+.filters.filters--inner
+{
+  display: none;
+}
+
+@media (--s)
+{
+  .filters
+  {
+    width: 100%;
+    margin-bottom: .625rem; /* 10/16 */
+    padding-right: .313rem; /* 5/16 */
+    padding-left: .313rem; /* 5/16 */
+  }
+
+  .filters__item--active .filters__icon
+  {
+    fill: #fff;
+  }
+
+  .filters__item--active .filters__wrap
+  {
+    background-color: var(--accentColor);
+  }
+
+  .filters__wrap
+  {
+    width: 14.0625vw;
+    height: 14.0625vw;
+    background-color: var(--innerBg);
+  }
+
+  .filters__icon
+  {
+    width: 7.5vw;
+    fill: var(--mainTextColor);
+  }
+
+  .filters__links
+  {
+    display: none;
+  }
+
+  .filters__title
+  {
+    display: none;
+  }
+
+  .filters__item:hover .filters__icon
+  {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  .filters.filters--inner
+  {
+    display: flex;
+  }
 }
 
 @media (--m)

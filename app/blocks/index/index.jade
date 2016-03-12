@@ -6,6 +6,7 @@ include ../articles/articles
 include ../heading/heading
 include ../banner/banner
 include ../filters/filters
+include ../bannerContainer/bannerContainer
 
 mixin index()
   +b.index
@@ -50,13 +51,14 @@ mixin index()
                       "desc": "Опыт работы: от 3 лет"
                     }
                   ])
-          .index__content.index__content--banners
-            +banner('Лаболатория', ['tubes']).--round.--second.shadow--outset
-            +banner('Зоогостиница', ['hotel']).--round.shadow--outset
-            +banner('Груминг', ['scissors']).--round.shadow--outset
-            +banner('Дрессировка', ['trainer']).--round.--second.shadow--outset
-            +banner('Зоотакси', ['taxi']).--round.--second.shadow--outset
-            +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--round.shadow--outset
+          .index__content
+            +bannerContainer()
+              +banner('Лаболатория', ['tubes']).--round.--second.shadow--outset
+              +banner('Зоогостиница', ['hotel']).--round.shadow--outset
+              +banner('Груминг', ['scissors']).--round.shadow--outset
+              +banner('Дрессировка', ['trainer']).--round.--second.shadow--outset
+              +banner('Зоотакси', ['taxi']).--round.--second.shadow--outset
+              +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--round.shadow--outset
           .index__content
             +contentBlock(null, 'Статьи').--main.--mobile
               +articlesMobile([

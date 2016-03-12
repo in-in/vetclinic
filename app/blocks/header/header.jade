@@ -9,7 +9,7 @@ include ../menu-mobile/menu-mobile
 include ../ham/ham
 
 mixin header()
-  +b('header').header&attributes(attributes)
+  +b.HEADER.header&attributes(attributes)
     +container()
       .header__wrap
         .header__top
@@ -29,6 +29,7 @@ mixin header()
                 span 500 50 50
         .header__bottom
           if (selected == "index")
-            +hero()
+            .header__hero
+              +hero()
         .header__filters
           +filters(getData('filters'))

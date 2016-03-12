@@ -3,7 +3,7 @@ include ../icon/icon
 mixin filters(list)
   +b.filters&attributes(attributes)
     each i in list
-      +e.item
+      +e.item(class= i.active ? "--active" : "")
         +e.wrap
           +icon(i.icon).filters__icon
           +e.links
@@ -11,4 +11,3 @@ mixin filters(list)
             a(href="#0").title Цены
             a(href="#0").title Статьи
         +e.H4.title.title= i.title
-        

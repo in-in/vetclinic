@@ -134,8 +134,8 @@
 
 .banner--second
 {
-  background-color: var(--mainBg);
   color: var(--accentColor);
+  background-color: var(--mainBg);
 }
 
 .banner--second .banner__icon svg
@@ -156,6 +156,36 @@
 
     width: 9.063rem; /* 145/16 */
     height: 9.063rem; /* 145/16 */
+  }
+
+  .banner--round:nth-child(odd)
+  {
+    background-color: var(--mainBg);
+  }
+
+  .banner--round:nth-child(odd) .banner__icon svg
+  {
+    fill: var(--accentColor);
+  }
+
+  .banner--round:nth-child(odd) .banner__title
+  {
+    color: var(--accentColor);
+  }
+
+  .banner--round:nth-child(even)
+  {
+    background-color: var(--accentColor);
+  }
+
+  .banner--round:nth-child(even) .banner__icon svg
+  {
+    fill: #fff;
+  }
+
+  .banner--round:nth-child(even) .banner__title
+  {
+    color: #fff;
   }
 }
 

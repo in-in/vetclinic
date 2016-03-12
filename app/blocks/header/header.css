@@ -55,13 +55,19 @@
 {
   .header
   {
-    height: 3.25rem; /* 52/16 */
+    height: 3.25rem;
+    height: auto;
     margin-bottom: 0;
     padding-top: 0;
-    border-bottom-right-radius: 1.25rem; /* 20/16 */
-    border-bottom-left-radius: 1.25rem; /* 20/16 */
-    box-shadow: .125rem .125rem .625rem 0 rgba(0, 0, 0, .2); /* 2/16, 2/16, 10/16 */
+    /*border-bottom-right-radius: 1.25rem;*/
+    /*border-bottom-left-radius: 1.25rem;*/
+    /*box-shadow: .125rem .125rem .625rem 0 rgba(0, 0, 0, .2);*/
     line-height: 3.25rem; /* 52/16 */
+  }
+
+  .header__wrap
+  {
+    height: 100%;
   }
 
   .header__row
@@ -71,8 +77,9 @@
     margin-bottom: 0;
   }
 
-  .header__bottom,
+  .header__hero,
   .header__search,
+  .header__bottom,
   .header__filters,
   .header__col--narrow
   {

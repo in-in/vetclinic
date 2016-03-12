@@ -6,6 +6,8 @@ include ../contentBlock/contentBlock
 include ../stations/stations
 include ../job/job
 include ../serviceList/serviceList
+include ../articles/articles
+include ../bannerContainer/bannerContainer
 
 mixin inner()
   +b.inner&attributes(attributes)
@@ -14,6 +16,31 @@ mixin inner()
         .inner__group
           .inner__main
             block
+          .inner__mobile
+            .inner__btn
+              +banner('Вызов ветеринара', ['fast']).--attention.--nomargin.--mobile.shadow.--outset
+            .inner__content
+              +contentBlock(null, 'Статьи').--main.--mobile
+                +articlesMobile([
+                {
+                  "title": 'Профилактика ушных заболеваний у собак',
+                  "img": "articles-mobile1.png",
+                  "date": "12.12.2015"
+                },
+                {
+                  "title": 'Как правильно кормить персидских котов',
+                  "img": "articles-mobile2.png",
+                  "date": "12.12.2015"
+                }
+              ]).--mobile
+            .inner__content
+              +bannerContainer()
+                +banner('Лаболатория', ['tubes']).--round.--second.shadow--outset
+                +banner('Зоогостиница', ['hotel']).--round.shadow--outset
+                +banner('Груминг', ['scissors']).--round.shadow--outset
+                +banner('Дрессировка', ['trainer']).--round.--second.shadow--outset
+                +banner('Зоотакси', ['taxi']).--round.--second.shadow--outset
+                +banner('Ищем хозяев', false, 'adopt.jpg', 'adopt.html').--round.shadow--outset
           .inner__sidebar
             .inner__group--sidebar
               +banner('Вызов ветеринара круглосуточно', ['fast']).--attention.--nomargin.shadow

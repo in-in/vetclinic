@@ -27,6 +27,7 @@
   {
     "title": "Рептилии",
     "icon": "lizard",
-    "link": "#0"
+    "link": "#0",
+    "active": true
   }
 ]

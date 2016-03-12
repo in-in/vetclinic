@@ -4,6 +4,7 @@ include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
 include ../blocks/serviceList/serviceList
 include ../blocks/filters/filters
+include ../blocks/mobileTitle/mobileTitle
 
 extends ../blocks/layout-default/layout-default
 
@@ -11,9 +12,10 @@ block head
   -var selected = 'service'
 
 block content
+  +mobileTitle() Рептилии
   +container()
     +breadcrumbs('Услуги')
+    +filters(getData('filters')).--inner
   +inner()
-    +filters(getData('filters')).--mobile
     +contentBlock(null, 'Виды услуг').--main.--nobg.shadow
       +serviceList(getData('serviceList'))

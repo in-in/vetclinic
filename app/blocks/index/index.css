@@ -86,10 +86,4 @@
   {
     margin-bottom: 2.813rem; /* 45/16 */
   }
-
-  .index__content--banners
-  {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }

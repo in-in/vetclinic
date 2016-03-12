@@ -45,15 +45,51 @@
   background-color: var(--mainBg);
 }
 
+.inner__mobile
+{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inner__content
+{
+  width: 100%;
+  margin-bottom: 2.813rem; /* 45/16 */
+}
+
+.inner__content:last-child
+{
+  margin-bottom: 0;
+}
+
+.inner__btn
+{
+  margin-bottom: 3.125rem; /* 50/16 */
+}
+
 @media (--s)
 {
+  .inner__group
+  {
+    flex-direction: column;
+    width: 100%;
+  }
+
   .inner__main
   {
     lost-column: 8/8;
+
+    margin-bottom: 4.375rem; /* 70/16 */
   }
 
   .inner__sidebar
   {
     display: none;
+  }
+
+  .inner__mobile
+  {
+    display: flex;
   }
 }
