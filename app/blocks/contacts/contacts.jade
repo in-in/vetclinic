@@ -4,7 +4,8 @@ mixin contacts()
   +b.contacts&attributes(attributes)
     +e.list
       +e.item
-        #map2
+        +e.map
+          #map2
         +e.info
           +e.block
             +e('p').title Адрес ветклиники:
@@ -29,7 +30,8 @@ mixin contacts()
             +e('p').text ПН / ВТ / СР / ЧТ / ПТ
             +e('p').text с 8:00 до 18:00
       +e.item
-        #map3
+        +e.map
+          #map3
         +e.info
           +e.block
             +e('p').title Адрес ветклиники:

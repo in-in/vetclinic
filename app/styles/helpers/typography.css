@@ -92,3 +92,15 @@ p .link
   font-size: inherit;
   font-weight: inherit;
 }
+
+@media (--s)
+{
+  .titleLarge
+  {
+    font-size: var(--mediumFontSize);
+  }
+
+  .text {
+    font-size: var(--smallFontSize);
+  }
+}

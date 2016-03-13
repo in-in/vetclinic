@@ -3,6 +3,7 @@ include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
 include ../blocks/contacts/contacts
+include ../blocks/filters/filters
 
 extends ../blocks/layout-default/layout-default
 
@@ -12,6 +13,7 @@ block head
 block content
   +container()
     +breadcrumbs('контакты')
+    +filters(getData('filters')).--inner
   +inner()
     +contentBlock(null, 'Контакты').--main.shadow
       +contacts()

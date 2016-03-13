@@ -9,7 +9,9 @@ include ../menu-mobile/menu-mobile
 include ../ham/ham
 
 mixin header()
-  +b.HEADER.header&attributes(attributes)
+  +b.HEADER.header(
+  class= selected === "about" || selected === "index" || selected === "hotel" || selected === "contacts" || selected === "404" || selected === "adopt" || selected === "adopt-more" || selected === "search-result" ? "--round" : ""
+  )&attributes(attributes)
     +container()
       .header__wrap
         .header__top

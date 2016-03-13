@@ -3,12 +3,17 @@ include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/contentBlock/contentBlock
 include ../blocks/404/404
+include ../blocks/filters/filters
 
 extends ../blocks/layout-default/layout-default
+
+block head
+  -var selected = '404'
 
 block content
   +container()
     +breadcrumbs('Ошибка 404')
+    +filters(getData('filters')).--inner
   +inner()
     +contentBlock(null, 'Ошибка 404').--main.shadow
       +404()

@@ -2,6 +2,7 @@ include ../blocks/container/container
 include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/tabs/tabs
+include ../blocks/filters/filters
 
 extends ../blocks/layout-default/layout-default
 
@@ -11,5 +12,6 @@ block head
 block content
   +container()
     +breadcrumbs('Зоогостиница')
+    +filters(getData('filters')).--inner
   +inner()
     +tabsContent()

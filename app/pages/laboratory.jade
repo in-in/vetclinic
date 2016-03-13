@@ -2,6 +2,8 @@ include ../blocks/container/container
 include ../blocks/breadcrumbs/breadcrumbs
 include ../blocks/inner/inner
 include ../blocks/tabs/tabs
+include ../blocks/filters/filters
+include ../blocks/mobileTitle/mobileTitle
 
 extends ../blocks/layout-default/layout-default
 
@@ -9,7 +11,9 @@ block head
   -var selected = 'laboratory'
 
 block content
+  +mobileTitle() Рептилии
   +container()
     +breadcrumbs('лаболатория')
+    +filters(getData('filters')).--inner
   +inner()
     +tabsContent()
