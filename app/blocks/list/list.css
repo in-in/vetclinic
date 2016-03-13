@@ -43,3 +43,11 @@
   margin: 0;
   font-size: var(--mediumFontSize);
 }
+
+@media (--s)
+{
+  .list__item
+  {
+    background-color: pink;
+  }
+}

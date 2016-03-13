@@ -1340,8 +1340,12 @@ p .link
               -ms-grid-row-align: center;
           align-items: center;
   width: 100%;
-  height: 42px;
-  height: 2.625rem; /* 42/16 */
+  padding-top: 12px;
+  padding-top: .75rem; /* 12/16 */
+  padding-right: 20px;
+  padding-right: 1.25rem; /* 20/16 */
+  padding-bottom: 12px;
+  padding-bottom: .75rem; /* 12/16 */
   padding-left: 20px;
   padding-left: 1.25rem; /* 20/16 */
   -webkit-border-top-left-radius: 20px;
@@ -1611,14 +1615,21 @@ p .link
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 1.563rem; /* 25/16 */
-    padding-right: 1.25rem; /* 20/16 */
-    padding-left: 1.25rem; /* 20/16 */
+    padding-top: .313rem; /* 5/16 */
+    padding-bottom: .313rem; /* 5/16 */
     text-transform: uppercase;
+  }
+
+  .contentBlock--right .contentBlock__title
+  {
+    position: relative;
   }
 
   .contentBlock--right .contentBlock__icon
   {
+    position: absolute;
+    top: 50%;
+    right: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1627,8 +1638,11 @@ p .link
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    margin-right: 0;
+    margin-right: 1.25rem; /* 20/16 */
     cursor: pointer;
+    -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .contentBlock--right .contentBlock__icon svg
@@ -4023,6 +4037,14 @@ p .link
   font-size: 14px;
   font-size: 0.875rem;
 }
+
+@media (max-width: 56.249em)
+{
+  .list__item
+  {
+    background-color: pink;
+  }
+}
 #map,
 #map2,
 #map3
@@ -4495,12 +4517,6 @@ p .link
   opacity: 0;
 }
 
-.priceList__label
-{
-  position: relative;
-  display: block;
-}
-
 .priceList input[type=checkbox]:checked + label + ul,
 .priceList input[type=checkbox]:checked + label:nth-of-type(n) + ul
 {
@@ -4523,8 +4539,6 @@ p .link
   display: block;
   margin-bottom: 1px;
   background-color: #ffd52e;
-  line-height: 36px;
-  line-height: 2.25rem; /* 36/16 */
 }
 
 .priceList__item:first-child
@@ -4541,8 +4555,10 @@ p .link
 {
   position: relative;
   display: block;
+  padding-top: .643em;
   padding-right: 23.008px;
   padding-right: 1.438rem; /* 23/16 */
+  padding-bottom: .643em;
   padding-left: 45.008px;
   padding-left: 2.813rem; /* 45/16 */
   cursor: pointer;
@@ -4602,13 +4618,10 @@ p .link
 
 .priceList__innerList span
 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
+              -ms-grid-row-align: center;
           align-items: center;
   height: 100%;
   margin: 0;
@@ -4756,6 +4769,49 @@ p .link
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 600;
+}
+
+@media (max-width: 56.249em)
+{
+  .priceList__label
+  {
+    font-size: 0.75rem;
+  }
+
+  .priceList__innerList span
+  {
+    font-size: 0.75rem;
+  }
+
+  .priceList__title
+  {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 70%;
+  }
+
+  .priceList__title:nth-child(1n) {
+        margin-right: 0;
+    }
+
+  .priceList__title:last-child {
+        margin-right: 0;
+    }
+
+  .priceList__title:nth-child(0n) {
+        float: right;
+    }
+
+  .priceList__title:nth-child(0n) {
+        margin-right: 0;
+    }
+
+  .priceList__unit
+  {
+    display: none;
+  }
 }
 .search
 {
