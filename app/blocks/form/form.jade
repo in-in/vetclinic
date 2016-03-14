@@ -1,13 +1,15 @@
 mixin form()
-  +b.FORM(method="POST", action='').form
+  +b.FORM(method="POST", action='').form&attributes(attributes)
       +e.field
         +e('input')(id="inputName", type='text', maxlength='100', placeholder="Ваше имя", required).input.shadow--inset
         +e('label')(for='inputName').label *
       +e.field
         +e('input')(id="inputPhone", type='text', maxlength='100', placeholder="Ваш телефон", required).input.shadow--inset
         +e('label')(for='inputPhone').label *
-      +e.field
+      +e.field.--email
         +e('input')(id="inputEmail", type='email', placeholder="Ваш e-mail").input.shadow--inset
+      +e.field.--doctor
+        +e('input')(id="inputDoctor", type='text', placeholder="Какой врач").input.shadow--inset
       +e.BUTTON(type="submit").button Отправить
       +e.legend Мы гарантируем, что ваши данные в безопасности! 
       +e.legend Мы не передаем ваши данные 3-м лицам

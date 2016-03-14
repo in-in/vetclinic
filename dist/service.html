@@ -222,14 +222,14 @@
 					<svg viewBox="0 0 1 1" class="icon-close"><use xlink:href="#icon-close"></use></svg>
 				</div>
 				<div class="modalForm__col modalForm__col--narrow">
-					<div class="formIntro">
+					<div class="formIntro formIntro--modal">
 						<p class="formIntro__title subtitle">Вызов ветеринара</p>
 						<p class="formIntro__title subtitle">Заполните ваши данные</p>
 						<span class="formIntro__required">Обязательные поля - отмечены звездочкой</span>
 					</div>
 				</div>
 				<div class="modalForm__col modalForm__col--wide">
-					<form method="POST" action="" class="form">
+					<form method="POST" action="" class="form form--modal">
 						<div class="form__field">
 							<input id="inputName" type="text" maxlength="100" placeholder="Ваше имя" required="true" class="form__input shadow shadow--inset"
 							/>
@@ -240,8 +240,11 @@
 							/>
 							<label for="inputPhone" class="form__label">*</label>
 						</div>
-						<div class="form__field">
+						<div class="form__field form__field--email">
 							<input id="inputEmail" type="email" placeholder="Ваш e-mail" class="form__input shadow shadow--inset" />
+						</div>
+						<div class="form__field form__field--doctor">
+							<input id="inputDoctor" type="text" placeholder="Какой врач" class="form__input shadow shadow--inset" />
 						</div>
 						<button type="submit" class="form__button">Отправить</button>
 						<div class="form__legend">Мы гарантируем, что ваши данные в безопасности! </div>

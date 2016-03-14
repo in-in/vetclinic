@@ -82,3 +82,8 @@
   font-weight: 300;
   font-style: italic;
 }
+
+.form--modal
+{
+  background-color: skyblue;
+}

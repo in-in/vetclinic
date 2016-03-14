@@ -8,6 +8,6 @@ mixin modalForm()
       +e.close
         +icon('close').icon-close
       +e.col--narrow
-        +formIntro("Вызов ветеринара", "Заполните ваши данные")
+        +formIntro("Вызов ветеринара", "Заполните ваши данные").--modal
       +e.col--wide
-        +form()
+        +form().--modal

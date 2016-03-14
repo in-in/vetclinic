@@ -58,3 +58,25 @@
 {
   lost-column: 3/5;
 }
+
+@media (--s)
+{
+  .modalForm__wrap
+  {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+
+  .modalForm__col--narrow,
+  .modalForm__col--wide
+  {
+    lost-column: 1/1;
+  }
+
+  .modalForm__col--narrow
+  {
+    margin-bottom: .938rem; /* 15/16 */
+  }
+}

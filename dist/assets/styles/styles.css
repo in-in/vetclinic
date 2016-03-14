@@ -2657,6 +2657,11 @@ p .link
   font-weight: 300;
   font-style: italic;
 }
+
+.form--modal
+{
+  background-color: skyblue;
+}
 .formIntro
 {
   -webkit-box-orient: vertical;
@@ -2664,6 +2669,10 @@ p .link
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   padding: 25.008px;
   padding: 1.563rem; /* 25/16 */
@@ -2671,10 +2680,6 @@ p .link
   border: .313rem solid #4ea4e7; /* 5/16 */
   -webkit-border-radius: 1.25rem;
           border-radius: 1.25rem; /* 20/16 */
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .formIntro p:last-of-type
@@ -2696,6 +2701,12 @@ p .link
   content: ' *';
   vertical-align: bottom;
   color: #f44336;
+}
+
+.formIntro--modal .formIntro__title:first-child
+{
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .ham
 {
@@ -4613,6 +4624,56 @@ p .link
 
 .modalForm__col--wide:nth-child(5n) {
     margin-right: 0;
+}
+
+@media (max-width: 56.249em)
+{
+  .modalForm__wrap
+  {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+
+  .modalForm__col--narrow,
+  .modalForm__col--wide
+  {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 99.99%;
+  }
+
+  .modalForm__col--narrow:nth-child(1n),
+  .modalForm__col--wide:nth-child(1n) {
+        margin-right: .625rem;
+    }
+
+  .modalForm__col--narrow:last-child,
+  .modalForm__col--wide:last-child {
+        margin-right: 0;
+    }
+
+  .modalForm__col--narrow:nth-child(1n),
+  .modalForm__col--wide:nth-child(1n) {
+        float: right;
+    }
+
+  .modalForm__col--narrow:nth-child(1n),
+  .modalForm__col--wide:nth-child(1n) {
+        margin-right: 0;
+    }
+
+  .modalForm__col--narrow
+  {
+    margin-bottom: .938rem; /* 15/16 */
+  }
 }
 .page
 {
