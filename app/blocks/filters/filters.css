@@ -82,7 +82,7 @@
 .filters.filters--mobile
 {
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 0;
   padding-right: 0;
   padding-left: 0;
@@ -93,9 +93,8 @@
   lost-column: 1/2;
 
   position: relative;
-  width: 9.063rem; /* 145/16 */
+  width: 9.063rem;
   height: 9.063rem; /* 145/16 */
-  margin: 0;
   margin-bottom: .625rem; /* 10/16 */
   border-radius: 50%;
   box-shadow: .125rem .125rem .625rem 0 rgba(0, 0, 0, .2); /* 2/16, 2/16, 10/16 */
