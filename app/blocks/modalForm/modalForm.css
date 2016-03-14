@@ -1,0 +1,60 @@
+.modalForm
+{
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: opacity .3s, visibility .3s;
+  opacity: 0;
+  background: rgba(var(--mainBg), .95);
+}
+
+.modalForm.is-visible
+{
+  visibility: visible;
+  transition: opacity .3s, visibility .3s;
+  opacity: 1;
+}
+
+.modalForm__wrap
+{
+  position: relative;
+  width: 39.375rem; /* 630/16 */
+  cursor: auto;
+}
+
+.modalForm__close
+{
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  display: flex;
+  width: 1.5rem; /* 24/16 */
+  height: 1.5rem; /* 24/16 */
+  cursor: pointer;
+}
+
+.icon-close
+{
+  width: 100%;
+  height: 100%;
+  fill: var(--accentColor);
+}
+
+.modalForm__col--narrow
+{
+  lost-column: 2/5;
+}
+
+.modalForm__col--wide
+{
+  lost-column: 3/5;
+}

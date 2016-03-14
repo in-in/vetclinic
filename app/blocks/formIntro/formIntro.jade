@@ -1,0 +1,5 @@
+mixin formIntro(title, subtitle)
+  +b.formIntro&attributes(attributes)
+    +e.P.title.subtitle= title
+    +e.P.title.subtitle= subtitle
+    +e.SPAN.required Обязательные поля - отмечены звездочкой

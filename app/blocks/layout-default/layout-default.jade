@@ -3,6 +3,7 @@ include ../page/page
 include ../header/header
 include ../footer/footer
 include ../scripts/scripts
+include ../modalForm/modalForm
 
 - bemto_settings_element = '__'
 - bemto_settings_modifier = '--'
@@ -13,6 +14,7 @@ html(lang='ru')
   include ../head/head
   include ../icon/icon-sprite
   +page()
+    +modalForm()
     +header()
     block content
     +footer()

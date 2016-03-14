@@ -1,4 +1,5 @@
 include ../form/form
+include ../formIntro/formIntro
 
 mixin contacts()
   +b.contacts&attributes(attributes)
@@ -57,9 +58,6 @@ mixin contacts()
             +e('p').text с 8:00 до 18:00
       +e.form
         +e.col.--narrow
-          +e.intro
-            p.subtitle Вы можете оставить ваши контакты
-            p И мы ответим на ваши вопросы
-            +e('span').required Обязательные поля - отмечены звездочкой
+          +formIntro("Вы можете оставить ваши контакты", "И мы ответим на ваши вопросы")
         +e.col.--wide
           +form()

@@ -1,0 +1,13 @@
+include ../form/form
+include ../formIntro/formIntro
+include ../icon/icon
+
+mixin modalForm()
+  +b.modalForm&attributes(attributes)
+    +e.wrap
+      +e.close
+        +icon('close').icon-close
+      +e.col--narrow
+        +formIntro("Вызов ветеринара", "Заполните ваши данные")
+      +e.col--wide
+        +form()
