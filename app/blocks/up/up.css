@@ -4,14 +4,27 @@
   right: 0;
   bottom: 4.25rem;
   display: none;
+  visibility: hidden;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   width: 2.813rem; /* 45/16 */
   height: 2.813rem; /* 45/16 */
   cursor: pointer;
+  opacity: 0;
   border-radius: 50%;
   background-color: var(--mainBg);
+}
+
+.up.is-visible
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.up.fade-out
+{
+  opacity: .5;
 }
 
 .up__inner

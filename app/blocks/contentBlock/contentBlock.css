@@ -18,13 +18,13 @@
 {
   align-items: center;
   width: 100%;
-  padding-top: .75rem; /* 12/16 */
+  height: 2.625rem; /* 42/16 */
   padding-right: 1.25rem; /* 20/16 */
-  padding-bottom: .75rem; /* 12/16 */
   padding-left: 1.25rem; /* 20/16 */
   border-top-left-radius: 1.25rem; /* 20/16 */
   border-top-right-radius: 1.25rem; /* 20/16 */
   background-color: var(--mainBg);
+  line-height: 2.625rem; /* 42/16 */
 }
 
 .contentBlock__icon
@@ -186,9 +186,9 @@
   .contentBlock__title
   {
     justify-content: center;
-    padding-top: .313rem; /* 5/16 */
-    padding-bottom: .313rem; /* 5/16 */
+    height: 1.563rem; /* 25/16 */
     text-transform: uppercase;
+    line-height: 1.563rem; /* 25/16 */
   }
 
   .contentBlock--right .contentBlock__title

@@ -7,11 +7,12 @@
 .figure img
 {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .figure__caption
 {
+  display: flex;
   margin: 0;
   padding-top: 1.063rem; /* 17/16 */
   padding-right: 3.125rem; /* 50/16 */
