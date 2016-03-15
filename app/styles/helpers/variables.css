@@ -1,17 +1,5 @@
 :root
 {
-  --marginCommon: 0.625rem;
-  --accentActive: #d11c3a;
-  --mobileHeaderColor: #2589de;
-  --filtersIconColor: #cb1533;
-  --widgetBgPrimary: #c31935;
-  --widgetBgSecond: #248ae1;
-  --bannerBg: #2a9dff;
-  --infoHeaderBg: #e0e0e0;
-  --infoHeaderColor: #302f2f;
-  --breadcrumbsItemColor: #a5a5a5;
-  --formMainColor: #69b3ff;
-
   --baseFontSize: 1rem;
   --smallFontSize: 0.75rem; /* 12/16 */
   --mediumFontSize: 0.875rem; /* 14/16 */

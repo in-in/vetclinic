@@ -1,24 +1,22 @@
 import jQuery from 'jquery';
 
-jQuery(document).ready(function($){
-  var offset = 300,
-    offset_opacity = 1300,
-    scroll_top_duration = 700,
-    $back_to_top = $('.up');
+jQuery(document).ready(function ($) {
+  const offset = 300;
+  const offsetOpacity = 1300;
+  const scrollDuration = 700;
+  const $backToTop = $('.up');
 
-  $(window).scroll(function(){
-    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('is-visible') : $back_to_top.removeClass('is-visible fade-out');
-    if( $(this).scrollTop() > offset_opacity ) {
-      $back_to_top.addClass('fade-out');
+  $(window).scroll(function () {
+    ($(this).scrollTop() > offset ) ? $backToTop.addClass('is-visible') : $backToTop.removeClass('is-visible fade-out');
+    if ( $(this).scrollTop() > offsetOpacity ) {
+      $backToTop.addClass('fade-out');
     }
   });
 
-  $back_to_top.on('click', function(event){
+  $backToTop.on('click', function (event) {
     event.preventDefault();
     $('body,html').animate({
-      scrollTop: 0 ,
-       }, scroll_top_duration
-    );
+      scrollTop: 0
+    }, scrollDuration);
   });
-
 });

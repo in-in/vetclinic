@@ -10,7 +10,7 @@
   cursor: pointer;
   border-radius: 4.375rem; /* 70/16 */
   border-bottom-left-radius: 0;
-  background-color: var(--bannerBg);
+  background-color: var(--accentColor);
 }
 
 .banner:last-child

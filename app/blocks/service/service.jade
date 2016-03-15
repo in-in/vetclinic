@@ -1,8 +1,0 @@
-include ../icon/icon
-
-mixin service(list)
-  +b('section').service&attributes(attributes)
-    each item in list
-      +e('a')(href="#0", class="item #{item.type}")
-        +icon(item.icon).service__icon
-        +e('h4').title.title&attributes(attributes)= item.title
