@@ -1,7 +1,0 @@
-include ../contentBlock/contentBlock
-include ../vacancies/vacancies
-
-mixin innerJob()
-  +b.innerJob&attributes(attributes)
-    +contentBlock(null, 'Вакансии').--main.--nobg.shadow
-      +vacancies(getData('vacancies'))

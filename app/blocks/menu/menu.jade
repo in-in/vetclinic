@@ -1,7 +1,0 @@
-mixin menu(menu)
-  +b.NAV.menu&attributes(attributes)
-    each item in menu
-      if (selected == item.link)
-        +e.A(href='#{item.link}.html').item.--active= item.title
-      else
-        +e.A(href='#{item.link}.html').item= item.title

@@ -1,6 +1,0 @@
-mixin slider(list)
-  +b.slider&attributes(attributes)
-    each i in list
-      +e.item
-        +e('img')(src="../assets/images/#{i[0]}.jpg", alt="").image
-        +e('p').title= i[1]
